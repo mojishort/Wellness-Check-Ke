@@ -957,6 +957,7 @@ body {
   color: #333;
   max-width: 90%;
   margin: auto;
+  animation: fadeInUp 1.5s ease forwards;
 }
 
 .mission-page h1 {
