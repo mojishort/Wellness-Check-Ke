@@ -3,37 +3,188 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wellness 360 Kenya</title>
+  <title>Wellness Check Kenya</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style (2).css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="logo">Wellness 360 Ke<span class="tm">™</span></div>
-    <nav class="navbar">
-      <ul class="nav-links" id="navLinks">
-        <li><a href="homepage.html">Home</a></li>
-        <li><a href="about.html">About us</a></li>
-        <li><a href="services.html">Services</a></li>
+<header class="header">
+  <div class="logo">
+    <img src="images/logo3.png" alt="Axis Surveyors Logo">
+  </div>
+  <nav class="navbar">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="homepage.html">Home</a></li>
+      <li class="dropdown">
+        <a href="about.html">About</a>
+        <ul class="dropdown-content">
+          <li><a href="mission.html">Our Mission</a></li>
+        </ul>
+      </li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="booknow.html">Book Now</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </nav>
+</header>
+
+    <section class="services-page">
+      <div class="container">
+        <h2 class="page-title">Our Services</h2>
+        <p class="page-intro">
+          At Wellness Check KE, we provide a wide range of preventive healthcare
+          solutions designed to meet the needs of individuals, families,
+          organizations, and communities. Explore our services below:
+        </p>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-item">
+            <div class="icon"><i class="fa-solid fa-building"></i></div>
+            <h3>Corporate Employee Screenings</h3>
+            <p>
+              We partner with organizations to deliver on-site employee screenings,
+              reducing downtime while promoting a healthier workforce.
+              Packages include blood pressure checks, blood sugar testing, BMI, and
+              lifestyle counseling.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-item">
+            <div class="icon"><i class="fa-solid fa-house-medical"></i></div>
+            <h3>Home-Based Health Checkups</h3>
+            <p>
+              Our mobile medical team visits you at home for convenient,
+              stress-free health screenings. Perfect for families, seniors, and
+              busy professionals seeking comfort and privacy.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="service-item">
+            <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <h3>Churches, Schools & Universities</h3>
+            <p>
+              We conduct group health drives at learning institutions and churches
+              to ensure communities have access to early detection and wellness
+              services.
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="service-item">
+            <div class="icon"><i class="fa-solid fa-dumbbell"></i></div>
+            <h3>Sports & Fitness Assessments</h3>
+            <p>
+              Designed for athletes and fitness enthusiasts, these screenings track
+              physical health, heart performance, and injury prevention markers.
+            </p>
+          </div>
+
+          <!-- Service 5 -->
+          <div class="service-item">
+            <div class="icon"><i class="fa-solid fa-globe-africa"></i></div>
+            <h3>Community & Rural Outreach</h3>
+            <p>
+              Our outreach teams bring essential health checkups to underserved
+              communities, increasing awareness and access to preventive healthcare.
+            </p>
+          </div>
+
+          <!-- Service 6 -->
+          <div class="service-item">
+            <div class="icon"><i class="fa-solid fa-droplet"></i></div>
+            <h3>Specialized Packages</h3>
+            <p>
+              Tailored health packages focusing on chronic illnesses such as
+              diabetes, hypertension, cholesterol, and cancer markers.
+            </p>
+          </div>
+
+          <!-- Service 7 -->
+          <div class="service-item">
+            <div class="icon"><i class="fa-solid fa-calendar-check"></i></div>
+            <h3>Annual Health Checkups</h3>
+            <p>
+              Yearly comprehensive checkups help detect health concerns early,
+              keeping you on track with preventive care goals.
+            </p>
+          </div>
+
+          <!-- Service 8 -->
+          <div class="service-item">
+            <div class="icon"><i class="fa-solid fa-crown"></i></div>
+            <h3>VIP Home Health Checkups</h3>
+            <p>
+              Premium, discreet, and personalized healthcare services provided at
+              your location. Designed for individuals who value convenience and
+              privacy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Footer -->
+<footer class="footer" id="contact">
+  <div class="footer-container">
+    <!-- About -->
+    <div class="footer-col">
+      <h4>Wellness Check Ke</h4>
+      <p>
+        Bringing quality, affordable healthcare to your doorstep.  
+        Mobile screenings, corporate wellness, and tech-driven health solutions.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="about.html">About Us</a></li>
         <li><a href="booknow.html">Book Now</a></li>
-        <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div class="menu-toggle" id="menuToggle">&#9776;</div>
-    </nav>
-  </header>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <ul>
+        <li>Email: info@wellness360.co.ke</li>
+        <li>Phone: +254 700 123 456</li>
+        <li>Nairobi, Kenya</li>
+      </ul>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/254700123456" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 Wellness Check Ke | All Rights Reserved</p>
+  </div>
+</footer>
 
 
-
-
-
-
-
-    <!-- Footer -->
-  <footer class="footer" id="contact">
-    <p>&copy; 2025 Wellness 360 Kenya | All Rights Reserved</p>
-  </footer>
 
   <script src="script.js"></script>
+
 </body>
 </html>

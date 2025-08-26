@@ -10,7 +10,6 @@ body {
   line-height: 1.6;
   color: #47e4dc;
 }
-
 /* Header */
 .header {
   display: flex;
@@ -24,19 +23,20 @@ body {
   top: 0;
   z-index: 1000;
 }
+
+/* Logo wrapper */
 .header .logo {
-  height: 60px;        /* fix logo area */
+  height: 90px;              /* fix logo area */
   display: flex;
-  align-items: center; /* keeps it vertically centered */
+  align-items: center;       /* vertical centering */
 }
 
-.header .logo .icon-logo {
-  font-size: 300px;   /* increase size */
-  color: #00AEEF;       /* adjust color */
-  line-height: 1;    /* keeps it neat */
-  display: inline-block;
+/* Logo image */
+.header .logo img {
+  height: 100%;              /* fills the 60px height */
+  width: 125px;               /* keeps proportions */
+  display: block;
 }
-
 
 .navbar ul {
   list-style: none;
@@ -173,10 +173,6 @@ body {
     padding: 8px 10px;
   }
 
-  /* Make sure the sub-menu shows up in mobile */
-  .nav-links.active .dropdown-content {
-    display: block;
-  }
 }
 
 /* ======================
@@ -202,7 +198,7 @@ body {
   justify-content: center;
   text-align: center;
   overflow: hidden;
-
+  background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
 }
 
 .hero-overlay {
@@ -887,12 +883,15 @@ body {
   margin-bottom: 40px;
 }
 
+
 .steps-wrapper {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+  flex-wrap: wrap; /* allow wrapping */
   position: relative;
 }
+
 
 .steps-wrapper::before {
   content: "";
@@ -901,9 +900,10 @@ body {
   left: 10%;
   right: 10%;
   height: 3px;
-  background: #00a896; /* teal connector line */
+  background: #00a896;
   z-index: 1;
 }
+
 
 .step {
   background: #fff;
@@ -924,7 +924,7 @@ body {
 .icon-circle {
   width: 60px;
   height: 60px;
-  background: #00AEEF;
+  background: #060707;
   color: #fff;
   border-radius: 50%;
   display: flex;
@@ -945,6 +945,30 @@ body {
   color: #080808;
   font-weight: 450;
 }
+
+/* Tablet: 2 per row */
+@media (max-width: 992px) {
+  .steps-wrapper {
+    justify-content: center;
+  }
+  .step {
+    flex: 1 1 calc(50% - 30px); /* two per row */
+    max-width: 45%;
+  }
+  .steps-wrapper::before {
+    display: none; /* hide connector line on stacked view */
+  }
+}
+
+/* Mobile: 1 per row */
+@media (max-width: 768px) {
+  .step {
+    flex: 1 1 100%; /* full width */
+    max-width: 100%;
+  }
+}
+
+
 
 
 
@@ -987,4 +1011,71 @@ body {
   font-style: italic;
   color: #2c7a7b;
   font-weight: 500;
+}
+
+
+
+
+
+
+/* Services Page Styling */
+.services-page {
+  padding: 80px 20px;
+  background: #fff;
+  color: #333;
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+.services-page .page-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 15px;
+  color:  #00AEEF;
+}
+
+.services-page .page-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #000000;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.service-item {
+  background: #fafafa;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.service-item .icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #000; /* black icons */
+}
+
+.service-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color:  #00AEEF;
+}
+
+.service-item p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
 }
