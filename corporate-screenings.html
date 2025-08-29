@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corporate Employee Screenings - Wellness Check Kenya</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style (2).css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <img src="images/logo3.png" alt="Wellness Check Kenya Logo">
+  </div>
+  <nav class="navbar">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="homepage.html">Home</a></li>
+      <li class="dropdown">
+        <a href="about.html">About</a>
+        <ul class="dropdown-content">
+          <li><a href="mission.html">Our Mission</a></li>
+        </ul>
+      </li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="booknow.html">Book Now</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </nav>
+</header>
+
+<main>
+  <section class="corporate-screenings-page">
+    <div class="container">
+      <h1 class="page-title">Corporate Staff Screenings</h1>
+      <p class="page-intro">
+        Promote a healthy and productive workforce with our on-site corporate health screenings. Our dedicated team comes directly to your office, providing comprehensive and convenient checkups designed to ensure your staff stay healthy and engaged.
+      </p>
+
+<div class="packages-grid">
+
+  <div class="package-card">
+    <div class="icon"><i class="fa-solid fa-seedling"></i></div>
+    <h3>Essential Wellness</h3>
+    <p class="package-description">
+      The perfect entry point for organizations looking to start their employee wellness journey.
+    </p>
+    <ul class="package-list">
+      <li><strong>Core Vitals:</strong> Blood pressure, temperature, BMI, and random blood sugar.</li>
+      <li><strong>Hemoglobin Test:</strong> A quick screening to check for anemia.</li>
+      <li><strong>Lifestyle & Nutrition Counseling:</strong> A brief 10-15 minute session for personalized advice.</li>
+    </ul>
+    <button class="package-btn" data-package="Essential Wellness">Choose This Package</button>
+  </div>
+
+  <div class="package-card">
+    <div class="icon"><i class="fa-solid fa-clipboard-check"></i></div>
+    <h3>Comprehensive Wellness</h3>
+    <p class="package-description">
+      Addresses both physical and mental health, providing a more holistic employee wellness snapshot.
+    </p>
+    <ul class="package-list">
+      <li><strong>Everything in Essential Package, plus:</strong></li>
+      <li><strong>Vision & Hearing Screening:</strong> Basic tests to detect common sensory issues.</li>
+      <li><strong>PHQ-9 Depression Screening:</strong> A widely used tool to screen for depression symptoms.</li>
+      <li><strong>Stress Perception Scale:</strong> An assessment to help employees manage their stress levels.</li>
+    </ul>
+    <button class="package-btn" data-package="Comprehensive Wellness">Choose This Package</button>
+  </div>
+
+    <div class="package-card">
+        <div class="icon"><i class="fa-solid fa-crown"></i></div>
+        <h3>Executive Wellness</h3>
+        <p class="package-description">
+        Best suited for organizations keen on long-term employee performance and retention.
+        </p>
+        <ul class="package-list">
+        <li><strong>Everything in Comprehensive Package, plus:</strong></li>
+        <li><strong>Burnout Inventory:</strong> Assesses and helps prevent professional burnout.</li>
+        <li><strong>Ergonomics & Workplace Checklist:</strong> Advice on improving comfort and reducing strain.</li>
+        <li><strong>Personalized Health Recommendations:</strong> Tailored reports for each employee.</li>
+        <li><strong>Company-wide Health Report:</strong> Anonymized summary of overall health trends.</li>
+        </ul>
+        <button class="package-btn" data-package="Executive Wellness">Choose This Package</button>
+    </div>
+    </div>
+
+    <div id="booking-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="form-heading" class="form-title"></h2>
+        <p class="form-subheading">Book a Corporate Wellness Program for Your Team</p>
+        <form action="#" method="POST" id="booking-form">
+        <label for="company-name">Company Name*</label>
+        <input type="text" id="company-name" name="company-name" required>
+
+        <label for="contact-person">Contact Person*</label>
+        <input type="text" id="contact-person" name="contact-person" required>
+
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number*</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="employees">Number of Employees*</label>
+        <input type="number" id="employees" name="employees" required min="1">
+
+        <label for="date">Preferred Date*</label>
+        <input type="date" id="date" name="date" required>
+
+        <button type="submit" class="submit-btn">Submit Booking</button>
+        </form>
+    </div>
+    </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>Wellness Check Ke</h4>
+      <p>
+        Bringing quality, affordable healthcare to your doorstep.  
+        Mobile screenings, corporate wellness, and tech-driven health solutions.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="booknow.html">Book Now</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <ul>
+        <li>Email: info@wellness360.co.ke</li>
+        <li>Phone: +254 700 123 456</li>
+        <li>Nairobi, Kenya</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/254700123456" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Wellness Check Ke | All Rights Reserved</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+  // Get the modal
+  const modal = document.getElementById('booking-modal');
+
+  // Get the buttons that open the modal
+  const btns = document.querySelectorAll('.package-btn');
+
+  // Get the <span> element that closes the modal
+  const span = document.querySelector('.close-btn');
+
+  // Get the form heading element
+  const formHeading = document.getElementById('form-heading');
+
+  // Loop through all buttons and add a click event listener
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Get the package name from the data attribute
+      const packageName = btn.getAttribute('data-package');
+      // Update the form heading
+      formHeading.textContent = `${packageName} Package Booking`;
+      // Display the modal
+      modal.style.display = 'block';
+    });
+  });
+
+  // When the user clicks on <span> (x), close the modal
+  span.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.addEventListener('click', (event) => {
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  });
+</script>
+</body>
+</html>
