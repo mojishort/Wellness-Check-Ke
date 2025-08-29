@@ -1158,23 +1158,24 @@ body {
   color: #00AEEF;
   text-align: center;
 }
+
 .package-description {
   font-size: 1rem;
   color: #151313;
   text-align: center;
   margin-bottom: 25px;
-  font-style: italic;  /* makes text italic */
+  font-style: italic;
 }
 
 .package-list {
-  list-style: none;   /* remove default dots */
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .package-list li {
   position: relative;
-  padding: 12px 15px 12px 35px; /* extra left space for tick */
+  padding: 12px 15px 12px 35px;
   margin-bottom: 10px;
   font-size: 0.95rem;
   color: #444;
@@ -1182,14 +1183,13 @@ body {
   border-radius: 8px;
 }
 
-/* add tick before each li */
 .package-list li::before {
   content: "✔";
   position: absolute;
-  left: 12px;   /* aligns the tick */
+  left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  color: #00AEEF;   /* customize tick color */
+  color: #00AEEF;
   font-weight: bold;
   font-size: 1rem;
 }
@@ -1199,11 +1199,9 @@ body {
   font-weight: 600;
 }
 
-
 .package-btn {
   display: block;
-  margin: 15px auto 0; /* auto left/right centers block element */
-  margin-top: 15px;
+  margin: 15px auto 0;
   padding: 10px 18px;
   font-size: 0.95rem;
   font-weight: 600;
@@ -1219,6 +1217,14 @@ body {
   transform: translateY(-2px);
   background: linear-gradient(135deg, #0078A0, #005F7A);
 }
+
+
+/* Wellness Packages Section */
+.wellness-packages {
+  padding: 40px 5px; /* space above & below */
+  background: #f9f9f9; /* subtle contrast from footer */
+}
+
 
 
 
@@ -1318,3 +1324,9 @@ body {
 .submit-btn:hover {
   background-color: #0078A0;
 }
+
+
+
+
+
+

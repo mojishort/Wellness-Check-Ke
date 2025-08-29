@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women Annual Health Checkups - Wellness Check Kenya</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style (2).css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <img src="images/logo3.png" alt="Wellness Check Kenya Logo">
+  </div>
+  <nav class="navbar">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="homepage.html">Home</a></li>
+      <li class="dropdown">
+        <a href="about.html">About</a>
+        <ul class="dropdown-content">
+          <li><a href="mission.html">Our Mission</a></li>
+        </ul>
+      </li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="services.html">Book Now</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </nav>
+</header>
+
+<!-- Women’s Annual Health Checkups Section -->
+<section class="corporate-screenings-page">
+  <div class="container">
+    <!-- Page Title -->
+    <h2 class="page-title">Women’s Annual Health Checkup Packages</h2>
+    <p class="page-intro">
+      Your health deserves special care. Our women-focused packages cover everything 
+      from routine screenings to advanced checks, helping you safeguard your well-being 
+      at every stage of life.
+    </p>
+
+    <!-- Packages Grid -->
+    <div class="packages-grid">
+      <!-- Essential Women’s Package -->
+      <div class="package-card">
+        <div class="icon">
+          <i class="fas fa-heartbeat"></i>
+        </div>
+        <h3>Essential Women’s Package</h3>
+        <p class="package-description">A basic wellness checkup for preventive care and lifestyle guidance.</p>
+        <ul class="package-list">
+          <li>Blood pressure & heart rate</li>
+          <li>Blood sugar (fasting/random)</li>
+          <li>BMI & weight check</li>
+          <li>Hemoglobin test</li>
+          <li>General wellness consultation</li>
+          <li>Nutrition & lifestyle advice</li>
+        </ul>
+        <button class="package-btn" data-package="Essential Women’s Package">Choose This Package</button>
+      </div>
+
+      <!-- Comprehensive Women’s Package -->
+      <div class="package-card">
+        <div class="icon">
+          <i class="fas fa-stethoscope"></i>
+        </div>
+        <h3>Comprehensive Women’s Package</h3>
+        <p class="package-description">An advanced package for in-depth screening and complete women’s health.</p>
+        <ul class="package-list">
+          <li>Everything in Basic Package</li>
+          <li>Urine analysis (sugar, protein, infection indicators)</li>
+          <li>Lipid profile / cholesterol check</li>
+          <li>Cervical cancer risk assessment / Pap smear (optional via lab)</li>
+          <li>Breast exam / self-exam guidance</li>
+          <li>Liver function test</li>
+          <li>Pulse oximetry</li>
+          <li>PHQ-9 depression / stress questionnaire</li>
+          <li>Teleconsultation review with doctor</li>
+        </ul>
+        <button class="package-btn" data-package="Comprehensive Women’s Package">Choose This Package</button>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<!-- Booking Modal -->
+<div id="booking-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2 id="form-heading" class="form-title">Book Your Package</h2>
+    <p class="form-subheading">Book a Women’s Annual Health Checkup Program</p>
+    <form action="#" method="POST" id="booking-form">
+      <label for="full-name">Full Name*</label>
+      <input type="text" id="full-name" name="full-name" required>
+
+      <label for="email">Email*</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number*</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="address">Home Address*</label>
+      <input type="text" id="address" name="address" required>
+
+      <label for="date">Preferred Date*</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Preferred Time*</label>
+      <input type="time" id="time" name="time" required>
+
+      <button type="submit" class="submit-btn">Submit Booking</button>
+    </form>
+  </div>
+</div>
+
+<footer class="footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>Wellness Check Ke</h4>
+      <p>
+        Bringing quality, affordable healthcare to your doorstep.  
+        Mobile screenings, corporate wellness, and tech-driven health solutions.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Book Now</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <ul>
+        <li>Email: info@wellness360.co.ke</li>
+        <li>Phone: +254 700 123 456</li>
+        <li>Nairobi, Kenya</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/254700123456" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Wellness Check Ke | All Rights Reserved</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<!-- Script -->
+<script>
+  const modal = document.getElementById("booking-modal");
+  const closeBtn = document.querySelector(".close-btn");
+  const packageButtons = document.querySelectorAll(".package-btn");
+  const formHeading = document.getElementById("form-heading");
+
+  packageButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const packageName = btn.getAttribute("data-package") || "Selected Package";
+      formHeading.textContent = `Booking: ${packageName}`;
+      modal.style.display = "block";
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
+
+</body>
+</html>
