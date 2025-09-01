@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faith Based, schools, institutions | Wellness Check Ke</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style (2).css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <img src="images/logo3.png" alt="Wellness Check Kenya Logo">
+  </div>
+  <nav class="navbar">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="homepage.html">Home</a></li>
+      <li class="dropdown">
+        <a href="about.html">About</a>
+        <ul class="dropdown-content">
+          <li><a href="mission.html">Our Mission</a></li>
+        </ul>
+      </li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="services.html">Book Now</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </nav>
+</header>
+
+    <main>
+
+    <section class="corporate-screenings-page">
+        <h1 class="page-title">Faith Based Communities, Schools & Universities</h1>
+        <p class="page-intro">We bring health screenings to your community hubs, ensuring students, staff, and congregants have access to essential health services.</p>
+
+        <div class="packages-grid">
+
+            <div class="package-card">
+                <div class="icon"><i class="fas fa-globe"></i></div>
+                <h3>Faith-Based Institutions</h3>
+                <p class="package-description">Bringing holistic health services to your congregation.</p>
+                <ul class="package-list">
+                    <li><strong>Blood pressure & blood sugar checks</strong></li>
+                    <li><strong>BMI & weight checks</strong></li>
+                    <li><strong>Basic eye & hearing screening</strong></li>
+                    <li><strong>Mental health awareness talks</strong> (stress, depression, addictions)</li>
+                    <li><strong>Nutrition & wellness counseling</strong></li>
+                    <li><strong>Maternal & child health talks</strong></li>
+                    <li><strong>Referrals</strong> (for identified health issues)</li>
+                    <li>Dental checks <span>(Add-on)</span></li>
+                    <li>Pharmacy / supplements stand <span>(Add-on)</span></li>
+                </ul>
+                <button class="package-btn">Choose This Package</button>
+            </div>
+
+            <div class="package-card">
+                <div class="icon"><i class="fas fa-school"></i></div>
+                <h3>Schools (Primary & Secondary)</h3>
+                <p class="package-description">Promoting a healthy learning environment for students.</p>
+                <ul class="package-list">
+                    <li><strong>Growth monitoring</strong> (height, weight, BMI)</li>
+                    <li><strong>Vision screening</strong></li>
+                    <li><strong>Hearing tests</strong></li>
+                    <li><strong>Mental wellness & hygiene talks</strong> (stress, bullying, puberty, self-esteem)</li>
+                    <li><strong>Nutrition & hygiene education</strong></li>
+                    <li><strong>Referrals</strong> (for further care)</li>
+                    <li>Dental check-ups <span>(Add-on)</span></li>
+                </ul>
+                <button class="package-btn">Choose This Package</button>
+            </div>
+
+            <div class="package-card">
+                <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                <h3>Training Institutions (Universities & Colleges)</h3>
+                <p class="package-description">Supporting the health and well-being of young adults.</p>
+                <ul class="package-list">
+                    <li><strong>Lifestyle disease screening</strong> (BP, sugar, BMI)</li>
+                    <li><strong>Mental health screening</strong> (stress, depression, anxiety questionnaires)</li>
+                    <li><strong>Sexual & reproductive health awareness</strong> (Youth Friendly Services, STI prevention, family planning)</li>
+                    <li><strong>Fitness & nutrition counseling</strong></li>
+                    <li><strong>Alcohol & substance abuse awareness</strong></li>
+                    <li><strong>Referrals</strong> (for further care)</li>
+                    <li>Counseling sessions <span>(Add-on)</span></li>
+                </ul>
+                <button class="package-btn">Choose This Package</button>
+            </div>
+
+        </div>
+    </section>
+    </main>
+
+
+    <!-- Booking Modal -->
+<div id="booking-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2 id="form-heading" class="form-title">Book Your Package</h2>
+    <p id="form-subheading" class="form-subheading">Fill in your details below</p>
+    
+    <form action="#" method="POST" id="booking-form">
+      <label for="institution-name">Institution Name*</label>
+      <input type="text" id="institution-name" name="institution-name" required>
+
+      <label for="contact-person">Contact Person*</label>
+      <input type="text" id="contact-person" name="contact-person" required>
+
+      <label for="email">Email*</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number*</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <!-- Dynamic group field -->
+      <div id="group-field"></div>
+
+      <label for="date">Preferred Date*</label>
+      <input type="date" id="date" name="date" required>
+
+      <button type="submit" class="submit-btn">Submit Booking</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+<footer class="footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>Wellness Check Ke</h4>
+      <p>
+        Bringing quality, affordable healthcare to your doorstep.  
+        Mobile screenings, corporate wellness, and tech-driven health solutions.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Book Now</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <ul>
+        <li>Email: info@wellness360.co.ke</li>
+        <li>Phone: +254 700 123 456</li>
+        <li>Nairobi, Kenya</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/254700123456" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Wellness Check Ke | All Rights Reserved</p>
+  </div>
+</footer>
+
+
+
+
+
+<!-- Auto-assign -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".package-card").forEach(card => {
+      const title = card.querySelector("h3")?.textContent.trim();
+      const btn = card.querySelector(".package-btn");
+      if (title && btn) {
+        btn.setAttribute("data-package", title);
+      }
+    });
+  });
+</script>
+
+<!-- Modal logic (yours) -->
+<script>
+  const modal = document.getElementById("booking-modal");
+  const closeBtn = document.querySelector(".close-btn");
+  const packageButtons = document.querySelectorAll(".package-btn");
+  const formHeading = document.getElementById("form-heading");
+  const formSubheading = document.getElementById("form-subheading");
+  const groupField = document.getElementById("group-field");
+
+  // When a package is clicked
+  packageButtons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      const packageName = btn.getAttribute("data-package") || "Selected Package";
+      formHeading.textContent = `Booking: ${packageName}`;
+      modal.style.display = "block";
+
+      // Clear previous dynamic field
+      groupField.innerHTML = "";
+
+      // Show the correct input based on package
+      if (packageName.includes("Faith")) {
+        formSubheading.textContent = "Please estimate the number of church members";
+        groupField.innerHTML = `
+          <label for="congregants">Estimated Church Members*</label>
+          <select id="congregants" name="congregants" required>
+            <option value=""><-- Select --></option>
+            <option value="<200">&lt;200 Members</option>
+            <option value="200-500">200 - 500 Members</option>
+            <option value="500+">500+ Members</option>
+          </select>
+        `;
+      } else if (packageName.includes("School")) {
+        formSubheading.textContent = "Please enter the number of pupils involved";
+        groupField.innerHTML = `
+          <label for="pupils">Number of Pupils*</label>
+          <input type="number" id="pupils" name="pupils" min="1" required>
+        `;
+      } else if (packageName.includes("University") || packageName.includes("College")) {
+        formSubheading.textContent = "Please choose the institution size";
+        groupField.innerHTML = `
+          <label for="comrades">Number of Students*</label>
+          <select id="comrades" name="comrades" required>
+            <option value=""><-- Select --></option>
+            <option value="small">Small (≤1,000 students)</option>
+            <option value="medium">Medium (1,001–3,000)</option>
+            <option value="large">Large (3,000+)</option>
+          </select>
+        `;
+      } else {
+        formSubheading.textContent = "Fill in your details below";
+      }
+    });
+  });
+
+  // Close modal
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
+
+
+<script src="script.js"></script>
+</body>
+</html>

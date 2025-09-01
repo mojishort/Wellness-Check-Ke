@@ -1052,18 +1052,6 @@ body {
   gap: 30px;
 }
 
-.service-link {
-  text-decoration: none; /* Removes the underline from the link */
-  color: inherit; /* Inherits the text color from its parent */
-}
-
-/* Ensure hover effects work correctly */
-.service-link:hover .service-item {
-  transform: translateY(-8px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-}
-
-
 
 .service-item {
   background: #fafafa;
@@ -1096,6 +1084,55 @@ body {
   color: #555;
   line-height: 1.6;
 }
+
+
+/* Scope to only cards you want this behavior */
+.service-item.with-button {
+  position: relative;
+  padding-bottom: 70px; /* reserve space for button */
+}
+
+.service-item.with-button .overlay-btn {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: #fff;
+  background: linear-gradient(135deg, #00AEEF, #0078A0);
+  font-weight: 600;
+  padding: 0.6rem 1.3rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.service-item.with-button:hover .overlay-btn {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+  background: linear-gradient(135deg, #0078A0, #005F7A);
+}
+
+
+/* ✅ Mobile fallback — always show button */
+@media (max-width: 768px) {
+  .service-item.with-button {
+    padding-bottom: 20px; /* no extra padding needed */
+  }
+
+  .service-item.with-button .overlay-btn {
+    position: static; /* make it flow under text */
+    display: inline-block;
+    margin-top: 15px;
+    transform: none;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
 
 
 
@@ -1307,6 +1344,20 @@ body {
   border-radius: 6px;
   box-sizing: border-box;
 }
+
+
+
+
+#booking-form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
 
 .submit-btn {
   width: 100%;

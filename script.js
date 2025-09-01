@@ -77,3 +77,15 @@ document.addEventListener('DOMContentLoaded', function() {
       carousel.scrollBy({ left: cardWidth, behavior: 'smooth' });
     }
   }, 4000);
+
+
+
+document.querySelectorAll('.service-item.with-overlay').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('active');
+  });
+});
+
+
+
+  

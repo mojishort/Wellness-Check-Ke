@@ -169,41 +169,49 @@
 <script src="script.js"></script>
 
 <script>
-  // Get the modal
   const modal = document.getElementById('booking-modal');
-
-  // Get the buttons that open the modal
   const btns = document.querySelectorAll('.package-btn');
-
-  // Get the <span> element that closes the modal
   const span = document.querySelector('.close-btn');
-
-  // Get the form heading element
   const formHeading = document.getElementById('form-heading');
+  const form = document.getElementById('booking-form');
+
+  // --- Auto-assign data-package from each card <h3> ---
+  document.querySelectorAll(".package-card").forEach(card => {
+    const title = card.querySelector("h3")?.textContent.trim();
+    const btn = card.querySelector(".package-btn");
+    if (title && btn) {
+      btn.setAttribute("data-package", title);
+    }
+  });
+
+  // Create hidden input so package info gets submitted with form
+  let hiddenInput = document.createElement("input");
+  hiddenInput.type = "hidden";
+  hiddenInput.name = "package";
+  form.appendChild(hiddenInput);
 
   // Loop through all buttons and add a click event listener
   btns.forEach(btn => {
     btn.addEventListener('click', () => {
-      // Get the package name from the data attribute
-      const packageName = btn.getAttribute('data-package');
-      // Update the form heading
+      const packageName = btn.getAttribute('data-package') || "Wellness";
       formHeading.textContent = `${packageName} Package Booking`;
-      // Display the modal
+      hiddenInput.value = packageName; // ✅ will be sent with form
       modal.style.display = 'block';
     });
   });
 
-  // When the user clicks on <span> (x), close the modal
+  // Close modal on X
   span.addEventListener('click', () => {
     modal.style.display = 'none';
   });
 
-  // When the user clicks anywhere outside of the modal, close it
+  // Close modal if clicked outside
   window.addEventListener('click', (event) => {
-    if (event.target == modal) {
+    if (event.target === modal) {
       modal.style.display = 'none';
     }
   });
 </script>
+
 </body>
 </html>
