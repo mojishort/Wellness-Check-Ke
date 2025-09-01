@@ -38,6 +38,8 @@ body {
   display: block;
 }
 
+
+
 .navbar ul {
   list-style: none;
   display: flex;
@@ -200,6 +202,15 @@ body {
   /* Background image */
   background: url("images/homepgbg.jpeg") center center/cover no-repeat;
 }
+@media (max-width: 768px) {
+  .hero-section {
+    background-position: top center; /* show top part of image */
+    background-size: cover;
+  }
+}
+
+
+
 
 /* Overlay */
 .hero-overlay {
@@ -658,6 +669,19 @@ body {
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto 40px;
+}
+
+.footer-col .logo {
+  height: 90px;              /* fix logo area */
+  display: flex;
+  align-items: center;       /* vertical centering */
+}
+
+/* Logo image */
+.footer-col .logo img {
+  height: 100%;              /* fills the 60px height */
+  width: 125px;               /* keeps proportions */
+  display: block;
 }
 
 .footer-col h4 {
@@ -1133,7 +1157,15 @@ body {
   }
 }
 
+.service-link {
+   text-decoration: none; /* Removes the underline from the link */ 
+   color: inherit; /* Inherits the text color from its parent */ 
+} /* Ensure hover effects work correctly */ 
 
+.service-link:hover .service-item {
+   transform: translateY(-8px); 
+   box-shadow: 0 6px 18px rgba(0,0,0,0.1); 
+}
 
 
 
