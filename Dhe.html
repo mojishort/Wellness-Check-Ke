@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wellness Check Kenya</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style (2).css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+  <div class="logo">
+    <img src="images/logo3.png" alt="Axis Surveyors Logo">
+  </div>
+  <nav class="navbar">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="homepage.html">Home</a></li>
+      <li class="dropdown">
+        <a href="about.html">About</a>
+        <ul class="dropdown-content">
+          <li><a href="mission.html">Our Mission</a></li>
+        </ul>
+      </li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="Dhe.html">DHE</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </nav>
+</header>
+
+
+
+
+
+<section class="dhe-page-content">
+  <div class="container">
+    <h1 class="page-title">Digital Health Education</h1>
+    <p class="page-intro">Empowering people Anytime, Anywhere</p>
+
+    <div class="dhe-intro-card">
+      <div class="intro-content">
+        <h2>About the Program</h2>
+        <p>
+          At Wellness Check KE, we believe health education should be simple, accessible, and impactful. Through our Digital Health Educator program, we provide communities with trusted, practical health knowledge delivered straight to their phones, schools, and workplaces.
+        </p>
+      </div>
+      <div class="intro-image">
+        <img src="images/med1.jpg" alt="A person using a phone to access health information." />
+      </div>
+    </div>
+
+    <div class="dhe-features-grid">
+
+      <div class="dhe-feature-card">
+        <div class="card-icon"><i class="fas fa-bullhorn"></i></div>
+        <h3>How We Deliver Health Education</h3>
+        <ul class="feature-list">
+          <li><strong>SMS & WhatsApp Updates</strong> – quick, reliable health tips in your pocket</li>
+          <li><strong>Social Media Campaigns</strong> – engaging posts, videos, and infographics</li>
+          <li><strong>Virtual Webinars & Live Talks</strong> – interactive health sessions with experts</li>
+          <li><strong>Community Challenges</strong> – fitness, mental health, and nutrition awareness campaigns</li>
+        </ul>
+      </div>
+
+      <div class="dhe-feature-card">
+        <div class="card-icon"><i class="fas fa-heartbeat"></i></div>
+        <h3>Focus Areas</h3>
+        <ul class="feature-list">
+          <li><strong>Cancer Awareness & Screening</strong></li>
+          <li><strong>Maternal & Newborn Care</strong></li>
+          <li><strong>Mental Health & Wellness</strong></li>
+          <li><strong>Lifestyle Diseases</strong> (Diabetes, Hypertension)</li>
+          <li><strong>Preventive Health & Nutrition</strong></li>
+        </ul>
+      </div>
+
+      <div class="dhe-feature-card">
+        <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+        <h3>Why It Matters</h3>
+        <ul class="feature-list">
+          <li>Easy-to-understand health information</li>
+          <li>Reaches both urban & rural communities</li>
+          <li>Promotes prevention over cure</li>
+          <li>Builds healthier, more informed families and workplaces</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+<div class="dhe-cta-section">
+  <div class="cta-content">
+    <h2>Join the Movement</h2>
+    <p>
+      Be part of the change! 
+      <a href="#" id="open-subscribe-modal" class="cta-link">Sign up</a> 
+      for our free digital health tips or 
+      <a href="#" id="open-invite-modal" class="cta-link">invite us</a> 
+      to conduct a health session for your school, workplace, or community.
+    </p>
+
+  </div>
+</div>
+
+<div id="subscribe-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2 class="form-title">Join Our Health Tips Program</h2>
+    <p class="form-subheading">Stay informed and empowered with free health education delivered to you.</p>
+
+    <form action="#" method="POST" id="subscription-form">
+      <div class="form-section-container">
+        <div class="form-field-group">
+          <label for="full-name">Full Name*</label>
+          <input type="text" id="full-name" name="full-name" required>
+        </div>
+        <div class="form-field-group">
+          <label for="phone-number">Phone Number*</label>
+          <input type="tel" id="phone-number" name="phone-number" placeholder="+254 7XX XXX XXX" required>
+        </div>
+      </div>
+
+      <div class="form-field-group">
+        <label>Preferred Delivery Channel*</label>
+        <div class="radio-group">
+          <input type="radio" id="channel-sms" name="delivery-channel" value="SMS" required>
+          <label for="channel-sms">SMS</label>
+          <input type="radio" id="channel-whatsapp" name="delivery-channel" value="WhatsApp">
+          <label for="channel-whatsapp">WhatsApp</label>
+          <input type="radio" id="channel-email" name="delivery-channel" value="Email">
+          <label for="channel-email">Email</label>
+        </div>
+      </div>
+
+      <div class="form-section-container">
+        <div class="form-field-group">
+          <label for="age-group">Age Group*</label>
+          <select id="age-group" name="age-group" required>
+            <option value="">-- Select Age Group --</option>
+            <option value="Under 18">Under 18</option>
+            <option value="18-25">18–25</option>
+            <option value="26-40">26–40</option>
+            <option value="41-60">41–60</option>
+            <option value="60+">60+</option>
+          </select>
+        </div>
+        <div class="form-field-group"></div> 
+      </div>
+
+      <div class="form-field-group">
+        <label>Preferred Topics* (Select all that apply)</label>
+        <div class="checkbox-group">
+          <input type="checkbox" id="topic-nutrition" name="topics[]" value="Nutrition">
+          <label for="topic-nutrition">Nutrition</label><br>
+          <input type="checkbox" id="topic-mental-health" name="topics[]" value="Mental Health">
+          <label for="topic-mental-health">Mental Health</label><br>
+          <input type="checkbox" id="topic-maternal" name="topics[]" value="Maternal & Child Care">
+          <label for="topic-maternal">Maternal & Child Care</label><br>
+          <input type="checkbox" id="topic-lifestyle" name="topics[]" value="Lifestyle Diseases">
+          <label for="topic-lifestyle">Lifestyle Diseases (e.g., diabetes, hypertension)</label><br>
+          <input type="checkbox" id="topic-general" name="topics[]" value="General Health Tips">
+          <label for="topic-general">General Health Tips</label>
+        </div>
+      </div>
+      
+      <div class="consent-box">
+        <input type="checkbox" id="consent-subscribe" name="consent-subscribe" required>
+        <label for="consent-subscribe">I agree to receive health education messages from Wellness Check KE. I can unsubscribe anytime.</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Subscribe Now</button>
+    </form>
+  </div>
+</div>
+
+
+<div id="invite-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2 class="form-title">Invite Us – Health Talk & Support</h2>
+    <p class="form-subheading">
+      Help us prepare a personalized health talk by filling out this questionnaire.
+    </p>
+
+    <form action="#" method="POST" id="invite-form">
+      
+      <!-- General Info -->
+      <h3>1. General Information</h3>
+      <div class="form-field-group">
+        <label for="invite-name">Name*</label>
+        <input type="text" id="invite-name" name="invite-name" required>
+      </div>
+
+      <div class="form-field-group">
+        <label for="invite-contact">Contact Information (Email/Phone)*</label>
+        <input type="text" id="invite-contact" name="invite-contact" required>
+      </div>
+
+      <div class="form-field-group">
+        <label>Type of Group*</label>
+        <select id="invite-group" name="invite-group" required>
+          <option value="">-- Select --</option>
+          <option value="Individual">Individual</option>
+          <option value="Family">Family</option>
+          <option value="Community Group">Community Group</option>
+          <option value="Workplace">Workplace</option>
+          <option value="School">School</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <!-- Health Topics -->
+      <h3>2. Health Topics of Interest</h3>
+      <div class="checkbox-group">
+        <input type="checkbox" id="topic-prevention" name="health-topics[]" value="Disease Prevention">
+        <label for="topic-prevention">Disease Prevention</label><br>
+        <input type="checkbox" id="topic-eating" name="health-topics[]" value="Healthy Eating">
+        <label for="topic-eating">Healthy Eating & Lifestyle</label><br>
+        <input type="checkbox" id="topic-chronic" name="health-topics[]" value="Chronic Disease Management">
+        <label for="topic-chronic">Chronic Disease Management</label><br>
+        <input type="checkbox" id="topic-mental" name="health-topics[]" value="Mental Health">
+        <label for="topic-mental">Mental Health Awareness</label><br>
+        <input type="checkbox" id="topic-maternal" name="health-topics[]" value="Maternal & Newborn Health">
+        <label for="topic-maternal">Maternal & Newborn Health</label><br>
+        <input type="checkbox" id="topic-elderly" name="health-topics[]" value="Elderly Care">
+        <label for="topic-elderly">Elderly Care</label><br>
+        <input type="checkbox" id="topic-firstaid" name="health-topics[]" value="First Aid Basics">
+        <label for="topic-firstaid">First Aid Basics</label><br>
+      </div>
+
+      <!-- Audience -->
+      <h3>3. Audience Demographics</h3>
+      <div class="form-field-group">
+        <label>Who will attend?*</label>
+        <select id="invite-audience" name="invite-audience" required>
+          <option value="">-- Select Audience --</option>
+          <option value="Children">Children</option>
+          <option value="Adults">Adults</option>
+          <option value="Elderly">Elderly</option>
+          <option value="Mixed">Mixed (All Ages)</option>
+        </select>
+      </div>
+
+      <div class="form-field-group">
+        <label for="attendees">Estimated Number of Attendees*</label>
+        <input type="number" id="attendees" name="attendees" min="1" required>
+      </div>
+
+      <!-- Duration -->
+      <h3>4. Desired Duration</h3>
+      <select id="invite-duration" name="invite-duration" required>
+        <option value="">-- Select Duration --</option>
+        <option value="30 min">30 minutes</option>
+        <option value="1 hr">1 hour</option>
+        <option value="1.5 hr">1.5 hours</option>
+        <option value="2 hr">2 hours</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <!-- Venue -->
+      <div class="form-field-group">
+        <label for="invite-venue">Venue (if in-person)</label>
+        <input type="text" id="invite-venue" name="invite-venue">
+      </div>
+
+      <!-- Special Requests -->
+      <div class="form-field-group">
+        <label for="invite-special">Special Requests (Optional)</label>
+        <textarea id="invite-special" name="invite-special" rows="3"></textarea>
+      </div>
+
+      <!-- Schedule -->
+      <h3>6. Scheduling Preferences</h3>
+      <div class="form-field-group">
+        <label for="invite-date">Preferred Date</label>
+        <input type="date" id="invite-date" name="invite-date">
+      </div>
+      <div class="form-field-group">
+        <label for="invite-time">Preferred Time</label>
+        <select id="invite-time" name="invite-time">
+          <option value="">-- Select --</option>
+          <option value="Morning">Morning</option>
+          <option value="Afternoon">Afternoon</option>
+          <option value="Evening">Evening</option>
+        </select>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Invite</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+  </div>
+</section>
+
+
+
+
+
+<footer class="footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-col">
+      <div class="logo">
+        <img src="images/logo3.png" alt="Wellness Check Kenya Logo">
+      </div>
+      <p>
+        Bringing quality, affordable healthcare to your doorstep.  
+        Mobile screenings, corporate wellness, and tech-driven health solutions.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="Dhe.html">DHE</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <ul>
+        <li>Email: info@wellness360.co.ke</li>
+        <li>Phone: +254 700 123 456</li>
+        <li>Nairobi, Kenya</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/254700123456" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Wellness Check Ke | All Rights Reserved</p>
+  </div>
+</footer>
+
+<script src="script.js"></script> 
+
+<script>
+const subscribeModal = document.getElementById("subscribe-modal");
+const openSubscribeBtn = document.getElementById("open-subscribe-modal");
+const closeBtn = subscribeModal.querySelector(".close-btn");
+
+if (openSubscribeBtn) {
+    openSubscribeBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        subscribeModal.style.display = "block";
+    });
+}
+
+if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+        subscribeModal.style.display = "none";
+    });
+}
+
+// Add this to your existing window click listener to close the modal
+window.addEventListener("click", (e) => {
+    if (e.target === subscribeModal) {
+        subscribeModal.style.display = "none";
+    }
+});
+
+// Invite Us modal
+const inviteModal = document.getElementById("invite-modal");
+const openInviteModal = document.getElementById("open-invite-modal");
+
+openInviteModal.addEventListener("click", (e) => {
+  e.preventDefault();
+  inviteModal.style.display = "block";
+});
+
+// Reuse close button logic
+document.querySelectorAll(".close-btn").forEach(btn => {
+  btn.onclick = () => {
+    btn.parentElement.parentElement.style.display = "none";
+  };
+});
+
+// Close on outside click
+window.addEventListener("click", (e) => {
+  if (e.target === inviteModal) inviteModal.style.display = "none";
+  if (e.target === subscribeModal) subscribeModal.style.display = "none";
+});
+
+</script>
+
+</body>
+</html>
