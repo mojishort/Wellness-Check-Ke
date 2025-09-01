@@ -1294,6 +1294,20 @@ body {
   background: #f9f9f9; /* subtle contrast from footer */
 }
 
+/* Hide button by default */
+.wellness-packages .package-card .package-btn {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(10px);
+}
+
+/* Show on hover */
+.wellness-packages .package-card:hover .package-btn {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
 
 
 
@@ -1412,4 +1426,201 @@ body {
 
 
 
+/* Two-row, single-column layout for content sections */
+.content-row {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to a new line */
+    gap: 30px;
+    margin-bottom: 50px;
+}
 
+.content-card {
+    background: #f8f8f8;
+    padding: 30px;
+    border-radius: 12px;
+    flex: 1 1 100%; /* Each card takes up 100% of the row space */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+.content-card h2 {
+    font-size: 1.8rem;
+    color: #00AEEF;
+    margin-bottom: 15px;
+}
+
+.content-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.content-card p {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.list-checkmark, .list-bullet {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-checkmark li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: #00AEEF;;
+}
+
+.list-checkmark li::before {
+    content: '✓'; /* Checkmark symbol */
+    position: absolute;
+    left: 0;
+    color: #00AEEF;
+    font-weight: bold;
+}
+
+.list-bullet li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Call to Action Section */
+.cta-section {
+    text-align: center;
+    background: #eef9ff;
+    padding: 50px 20px;
+    border-radius: 12px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    color: #333;
+    max-width: 700px;
+    margin: 0 auto 25px;
+    line-height: 1.5;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #00AEEF, #0078A0);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #0078A0, #005F7A);
+}
+
+/* Optional: Hide scrollbar for a cleaner look on most browsers */
+.content-row::-webkit-scrollbar {
+  display: none;
+}
+.content-row {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+
+/* Specific styling for the partnership form */
+
+
+/* Specific styling for the partnership form */
+.form-section-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-field-group {
+  flex: 1 1 calc(50% - 10px); /* two per row with gap balance */
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field-group label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-field-group input,
+.form-field-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Responsive: stack fields to 1 column */
+@media (max-width: 600px) {
+  .form-field-group {
+    flex-basis: 100%;
+  }
+}
+
+
+#partnership-form h3 {
+    color: #0078A0;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.checkbox-group {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.checkbox-group label {
+    display: inline;
+    font-weight: normal;
+    font-size: 0.95rem;
+    color: #363535;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+    padding: 0;
+}
+
+.checkbox-group input[type="text"] {
+    margin-top: 5px;
+}
+
+#partnership-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: inherit;
+    resize: vertical;
+}
+
+
+
+.consent-box label {
+    display: inline;
+    margin-left: 5px;
+    font-weight: normal;
+    font-size: 0.95rem;
+    color: #050505;;
+}
+
+.consent-box input[type="checkbox"] {
+    width: auto;
+    padding: 0;
+    margin-top: 0;
+}

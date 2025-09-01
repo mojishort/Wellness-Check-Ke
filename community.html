@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community & Rural Outreach | Wellness Check Ke</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style (2).css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <img src="images/logo3.png" alt="Wellness Check Kenya Logo">
+  </div>
+  <nav class="navbar">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="homepage.html">Home</a></li>
+      <li class="dropdown">
+        <a href="about.html">About</a>
+        <ul class="dropdown-content">
+          <li><a href="mission.html">Our Mission</a></li>
+        </ul>
+      </li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="services.html">Book Now</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </nav>
+</header>
+
+<main>
+    <section class="corporate-screenings-page">
+    <h1 class="page-title">Community & Rural Health Outreach</h1>
+            <p class="page-intro">
+                Bringing Healthcare to the Heart of Communities
+                <br>
+                At Wellness Check Kenya, we believe that no one should be left behind when it comes to health. Our mobile medical team travels to underserved areas, delivering essential health screenings, education, and support where it’s needed most.
+            </p>
+        </div>
+
+        <div class="content-row">
+            <div class="content-card">
+                <h2>1. Partnerships with NGOs & County Governments</h2>
+                <p>
+                    We collaborate with NGOs, development partners, and county health departments to deliver thematic medical outreaches that align with their mandates. Whether it’s maternal and child health, youth wellness and drug awareness, or elderly care, we provide the logistics, professional staff, and health solutions — while our partners provide funding and community mobilization.
+                </p>
+                <h3>Why partner with us?</h3>
+                <ul class="list-checkmark">
+                    <li>Ready-to-deploy mobile health units</li>
+                    <li>Professional healthcare teams</li>
+                    <li>Data collection & reporting for accountability</li>
+                    <li>Flexible outreach packages tailored to partner goals</li>
+                </ul>
+                <p>
+                    Position your organization as a catalyst for healthier communities while we handle the execution.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h2>2. Corporate Social Responsibility (CSR) Programs</h2>
+                <p>
+                    We empower companies to transform their CSR budgets into life-changing community health programs. By sponsoring health camps in rural areas, your brand not only reaches thousands but also creates lasting social impact.
+                </p>
+                <h3>CSR Opportunities:</h3>
+                <ul class="list-checkmark">
+                    <li>Sponsor Branded Rural Medical Camps</li>
+                    <li>Partner on Thematic Health Awareness Days (Breast Cancer, Prostate Cancer, School Health Week, etc.)</li>
+                    <li>Long-term community trust and loyalty</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <p>
+                Are you an NGO, county government, or corporate looking to make an impact?
+                <br>
+                Partner with Wellness Check Ke to deliver community health where it’s needed most.
+            </p>
+            <a href="#" class="cta-btn" id="open-partnership-modal">Become a Partner</a>
+        </div>
+    </section>
+</main>
+
+
+
+<div id="partnership-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 class="form-title">Partnership Inquiry Form</h2>
+        <p class="form-subheading">Please fill out the details below to start our partnership journey.</p>
+        
+        <form action="#" method="POST" id="partnership-form">
+            <h3>Section 1: Organization Details</h3>
+            <div class="form-section-container">
+                <div class="form-field-group">
+                    <label for="org-name">Organization / Company Name*</label>
+                    <input type="text" id="org-name" name="org-name" required>
+                </div>
+                <div class="form-field-group">
+                    <label for="org-type">Type of Organization*</label>
+                    <select id="org-type" name="org-type" required>
+                        <option value="">-- Select --</option>
+                        <option value="NGO">NGO</option>
+                        <option value="County Government">County Government</option>
+                        <option value="Corporate">Corporate</option>
+                        <option value="Faith-Based Organization">Faith-Based Organization</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-field-group">
+                    <label for="website">Website / Social Media Link</label>
+                    <input type="url" id="website" name="website">
+                </div>
+                <div class="form-field-group">
+                    <label for="org-location">Office Location (County / Town)*</label>
+                    <input type="text" id="org-location" name="org-location" required>
+                </div>
+            </div>
+            
+            <h3>Section 2: Contact Person</h3>
+            <div class="form-section-container">
+                <div class="form-field-group">
+                    <label for="contact-full-name">Full Name*</label>
+                    <input type="text" id="contact-full-name" name="contact-full-name" required>
+                </div>
+                <div class="form-field-group">
+                    <label for="contact-position">Position / Role*</label>
+                    <input type="text" id="contact-position" name="contact-position" required>
+                </div>
+                <div class="form-field-group">
+                    <label for="contact-phone">Phone Number*</label>
+                    <input type="tel" id="contact-phone" name="contact-phone" required>
+                </div>
+                <div class="form-field-group">
+                    <label for="contact-email">Email Address*</label>
+                    <input type="email" id="contact-email" name="contact-email" required>
+                </div>
+            </div>
+            
+            <h3>Section 3: Partnership Interest</h3>
+            <label>Area of Interest* (Select all that apply)</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="maternal" name="interest[]" value="Maternal & Child Health">
+                <label for="maternal">Maternal & Child Health</label><br>
+                <input type="checkbox" id="youth" name="interest[]" value="Youth Wellness & Drug Awareness">
+                <label for="youth">Youth Wellness & Drug Awareness</label><br>
+                <input type="checkbox" id="elderly" name="interest[]" value="Elderly Care">
+                <label for="elderly">Elderly Care</label><br>
+                <input type="checkbox" id="chronic" name="interest[]" value="Chronic Disease Screening">
+                <label for="chronic">Chronic Disease Screening</label><br>
+                <input type="checkbox" id="csr" name="interest[]" value="CSR Community Health Camps">
+                <label for="csr">CSR Community Health Camps</label><br>
+                <input type="checkbox" id="school-health" name="interest[]" value="School / University Health Programs">
+                <label for="school-health">School / University Health Programs</label><br>
+                <input type="checkbox" id="other-interest" name="interest[]" value="Other">
+                <label for="other-interest">Other:</label>
+                
+                <div class="form-field-group" style="width: 100%; margin-top: 10px;">
+                    <input type="text" id="other-interest-text" name="other-interest-text" placeholder="Please specify">
+                </div>
+            </div>
+            <div class="form-section-container">
+                <div class="form-field-group">
+                    <label for="outreach-model">Preferred Outreach Model*</label>
+                    <select id="outreach-model" name="outreach-model" required>
+                        <option value="">-- Select --</option>
+                        <option value="One-time Outreach">One-time Outreach</option>
+                        <option value="Annual Program">Annual Program</option>
+                        <option value="CSR Sponsorship">CSR Sponsorship</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-field-group">
+                    <label for="timeline">Proposed Timeline*</label>
+                    <select id="timeline" name="timeline" required>
+                        <option value="">-- Select --</option>
+                        <option value="Immediate">Immediate</option>
+                        <option value="Within 3 Months">Within 3 Months</option>
+                        <option value="Within 6–12 Months">Within 6–12 Months</option>
+                        <option value="Flexible">Flexible</option>
+                    </select>
+                </div>
+            </div>
+
+            <h3>Section 4: Additional Information</h3>
+            <label for="partnership-description">Brief Description of Your Goals / Proposed Partnership*</label>
+            <textarea id="partnership-description" name="partnership-description" rows="5" required></textarea>
+
+            <h3>Section 5: Consent</h3>
+            <div class="consent-box">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">I agree to be contacted by Wellness check Ke regarding partnership opportunities.</label>
+            </div>
+            
+            <button type="submit" class="submit-btn">Send Inquiry</button>
+        </form>
+    </div>
+</div>
+
+
+
+<footer class="footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-col">
+      <div class="logo">
+        <img src="images/logo3.png" alt="Wellness Check Kenya Logo">
+      </div>
+      <p>
+        Bringing quality, affordable healthcare to your doorstep.  
+        Mobile screenings, corporate wellness, and tech-driven health solutions.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Book Now</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <ul>
+        <li>Email: info@wellness360.co.ke</li>
+        <li>Phone: +254 700 123 456</li>
+        <li>Nairobi, Kenya</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/254700123456" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Wellness Check Ke | All Rights Reserved</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+    
+const partnershipModal = document.getElementById("partnership-modal");
+const openPartnershipBtn = document.getElementById("open-partnership-modal");
+const closeBtns = document.querySelectorAll(".close-btn");
+
+if (openPartnershipBtn) {
+    openPartnershipBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        partnershipModal.style.display = "block";
+    });
+}
+
+// Close modal logic (can be shared among all modals)
+closeBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        btn.closest(".modal").style.display = "none";
+    });
+});
+
+window.addEventListener("click", (e) => {
+    if (e.target.classList.contains('modal')) {
+        e.target.style.display = "none";
+    }
+});
+</script>
+
+</body>
+</html>
