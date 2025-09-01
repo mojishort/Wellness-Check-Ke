@@ -1293,24 +1293,37 @@ body {
   padding: 40px 5px; /* space above & below */
   background: #f9f9f9; /* subtle contrast from footer */
 }
-
-/* Hide button by default */
-.wellness-packages .package-card .package-btn {
-  opacity: 0;
-  visibility: hidden;
+/* Styling for the View Packages button */
+.wellness-packages .package-btn {
+  display: block;
+  width: fit-content;
+  margin: 15px auto 0;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(135deg, #00AEEF, #0078A0);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
   transition: opacity 0.3s ease, transform 0.3s ease;
+  
+  /* Initial state: hidden and slightly moved down */
+  opacity: 0;
   transform: translateY(10px);
 }
 
-/* Show on hover */
+/* On hover over the card, show the button */
 .wellness-packages .package-card:hover .package-btn {
   opacity: 1;
-  visibility: visible;
   transform: translateY(0);
 }
 
-
-
+/* Button hover effect */
+.wellness-packages .package-btn:hover {
+  background: linear-gradient(135deg, #0078A0, #005F7A);
+}
 
 
 /* Modal Styling */
