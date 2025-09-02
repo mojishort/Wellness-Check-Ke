@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports & Fitness Health Checks | Wellness Check KE</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style (2).css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="logo">
+    <img src="images/logo3.png" alt="Wellness Check Kenya Logo">
+  </div>
+  <nav class="navbar">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="homepage.html">Home</a></li>
+      <li class="dropdown">
+        <a href="about.html">About</a>
+        <ul class="dropdown-content">
+          <li><a href="mission.html">Our Mission</a></li>
+        </ul>
+      </li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="Dhe.html">DHE Section</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-toggle" id="menuToggle">&#9776;</div>
+  </nav>
+</header>
+
+
+<main>
+<!-- Sports & Fitness Page -->
+<section class="corporate-screenings-page">
+  <h1 class="page-title">Sports & Fitness Health Checks</h1>
+  <p class="page-intro">
+    <strong>Assess, Optimize, Protect</strong><br>
+    At Wellness Check KE, our healthcare team brings professional fitness and health screenings 
+    directly to gyms, schools, workplaces, and sports teams. We identify cardiovascular, 
+    musculoskeletal, and performance risks, providing actionable insights to improve fitness, 
+    prevent injuries, and optimize overall health.
+  </p>
+
+  <div class="packages-grid">
+    <!-- Essential Package -->
+    <div class="package-card">
+      <div class="icon"><i class="fas fa-dumbbell"></i></div>
+      <h3>Essential Package</h3>
+      <p class="package-description">For fitness enthusiasts, corporate & school teams, gyms</p>
+      <ul class="package-list">
+        <li><strong>Baseline Fitness & Health Screening:</strong> Resting Heart Rate, Blood Pressure, Oxygen Saturation, Respiratory Rate, BMI, and waist-to-hip ratio.</li>
+        <li><strong>Musculoskeletal & Injury Risk Screening:</strong> Posture assessment, flexibility & range of motion tests, core stability, balance tests, and functional movement observation. Identification of red flags.</li>
+        <li><strong>Cardiovascular & Endurance Check:</strong> Step Test, Talk Test, and observation of fatigue and breathing patterns.</li>
+        <li><strong>Performance Optimization & Recovery Guidance:</strong> Exercise intensity recommendations, warm-up & cool-down routines, recovery strategies, and basic nutrition advice.</li>
+        <li><strong>Mental Performance Screening:</strong> Identify stress, focus, or motivation risks with brief guidance and referral if needed.</li>
+      </ul>
+      <p class="package-description"><em>Deliverables:</em> Personalized Fitness & Injury Risk Report with exercise, recovery, and lifestyle recommendations.</p>
+        <button class="package-btn" data-package="essential">Choose This Package</button>
+    </div>
+
+    <!-- Comprehensive Package -->
+    <div class="package-card">
+      <div class="icon"><i class="fas fa-heartbeat"></i></div>
+      <h3>Comprehensive Package</h3>
+      <p class="package-description">For high-performance athletes, competitive teams, and complete evaluations</p>
+      <ul class="package-list">
+        <li>Includes all <strong>Essential Package</strong> services PLUS:</li>
+        <li><strong>Advanced Musculoskeletal Assessment:</strong> Manual muscle testing, joint-specific stress tests, and physiotherapy referrals if needed.</li>
+        <li><strong>Advanced Cardiovascular Screening:</strong> VO₂ max estimation and ECG.</li>
+        <li><strong>Mental Performance Screening:</strong> Identify stress, focus, or motivation risks with brief guidance and referral if needed.</li>
+      </ul>
+      <p class="package-description"><em>Deliverables:</em> Comprehensive Fitness & Injury Risk Report with detailed specialist recommendations, exercise plans, and recovery guidance.</p>
+    <button class="package-btn" data-package="comprehensive">Choose This Package</button>
+    </div>
+  </div>
+</section>
+
+<div id="essentialBookingModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2 class="form-title">Booking Form</h2>
+    <p class="form-subheading">Essential Sports & Fitness Health Check</p>
+
+    <form action="#" method="POST" id="subscription-form">
+      <h3>1. Personal Information</h3>
+      <div class="form-section-container">
+        <div class="form-field-group">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" required>
+        </div>
+
+        <div class="form-field-group">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" required>
+        </div>
+
+        <div class="form-field-group">
+          <label for="phone-number">Phone Number</label>
+          <input type="tel" id="phone-number" name="phone-number" placeholder="+254 7XX XXX XXX" required>
+        </div>
+
+        <div class="form-field-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+
+      <div class="form-field-group">
+        <label>Gender</label>
+        <div class="radio-group">
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label>
+        </div>
+      </div>
+
+      <h3>2. Preferred Location</h3>
+      <div class="form-section-container">
+        <div class="form-field-group">
+          <div class="radio-group">
+            <input type="radio" id="locationHome" name="location" value="At Home">
+            <label for="locationHome">At Home</label>
+
+            <input type="radio" id="locationGym" name="location" value="At my Gym / Fitness Center" required>
+            <label for="locationGym">At my Gym / Fitness Center</label>
+          </div>
+        </div>
+      </div>
+
+      <h3>3. Preferred Date & Time</h3>
+      <div class="form-section-container">
+        <div class="form-field-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-field-group">
+          <label for="time">Time</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+      </div>
+
+      <h3>4. Fitness Background (Optional)</h3>
+      <div class="form-field-group">
+        <label for="sportType">Type of Sport/Fitness Activity</label>
+        <input type="text" id="sportType" name="sportType">
+      </div>
+
+      <div class="form-field-group">
+        <label for="trainingFrequency">Training Frequency</label>
+        <input type="text" id="trainingFrequency" name="trainingFrequency">
+      </div>
+
+      <div class="form-field-group">
+        <label for="injuries">Recent Injuries/Concerns</label>
+        <textarea id="injuries" name="injuries" rows="4"></textarea>
+      </div>
+
+      <div class="form-field-group">
+        <h3 style="margin-top: 25px;">5. Consent & Agreement</h3>
+        <div class="consent-box">
+          <input type="checkbox" id="consent" name="consent" required>
+          <label for="consent">I understand this is a screening service only.</label>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">Book Now</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+<div id="Comprehensive" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2 class="form-title">Booking Form</h2>
+    <p class="form-subheading">Comprehensive Sports & Fitness Health Check</p>
+
+    <form action="#" method="POST" id="subscription-form">
+      <h3>1. Personal Information</h3>
+      <div class="form-section-container">
+        <div class="form-field-group">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" required>
+        </div>
+
+        <div class="form-field-group">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" required>
+        </div>
+
+        <div class="form-field-group">
+          <label for="phone-number">Phone Number</label>
+          <input type="tel" id="phone-number" name="phone-number" placeholder="+254 7XX XXX XXX" required>
+        </div>
+
+        <div class="form-field-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+
+      <div class="form-field-group">
+        <label>Gender</label>
+        <div class="radio-group">
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Female</label>
+
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other">Other</label>
+        </div>
+      </div>
+
+      <h3>2. Preferred Location</h3>
+      <div class="form-section-container">
+        <div class="form-field-group">
+          <div class="radio-group">
+            <input type="radio" id="locationHome" name="location" value="At Home">
+            <label for="locationHome">At Home</label>
+
+            <input type="radio" id="locationGym" name="location" value="At my Gym / Fitness Center" required>
+            <label for="locationGym">At my Gym / Fitness Center</label>
+          </div>
+        </div>
+      </div>
+
+      <h3>3. Preferred Date & Time</h3>
+      <div class="form-section-container">
+        <div class="form-field-group">
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-field-group">
+          <label for="time">Time</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+      </div>
+
+      <h3>4. Fitness Background (Optional)</h3>
+      <div class="form-field-group">
+        <label for="sportType">Type of Sport/Fitness Activity</label>
+        <input type="text" id="sportType" name="sportType">
+      </div>
+
+      <div class="form-field-group">
+        <label for="trainingFrequency">Training Frequency</label>
+        <input type="text" id="trainingFrequency" name="trainingFrequency">
+      </div>
+
+      <div class="form-field-group">
+        <label for="injuries">Recent Injuries/Concerns</label>
+        <textarea id="injuries" name="injuries" rows="4"></textarea>
+      </div>
+
+      <div class="form-field-group">
+        <h3 style="margin-top: 25px;">5. Consent & Agreement</h3>
+        <div class="consent-box">
+          <input type="checkbox" id="consent" name="consent" required>
+          <label for="consent">I understand this is a screening service only.</label>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">Book Now</button>
+    </form>
+  </div>
+</div>
+
+
+</main>
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="footer" id="contact">
+  <div class="footer-container">
+    <div class="footer-col">
+      <div class="logo">
+        <img src="images/logo3.png" alt="Wellness Check Kenya Logo">
+      </div>
+      <p>
+        Bringing quality, affordable healthcare to your doorstep.  
+        Mobile screenings, corporate wellness, and tech-driven health solutions.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="Dhe.html">DHE Section</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <ul>
+        <li>Email: info@wellness360.co.ke</li>
+        <li>Phone: +254 700 123 456</li>
+        <li>Nairobi, Kenya</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/254700123456" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Wellness Check KE | All Rights Reserved</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+    // Get the modal and the button to open it
+const essentialPackageButton = document.querySelector('.packages-grid .package-card:first-child .package-btn');
+const essentialBookingModal = document.getElementById('essentialBookingModal');
+const closeBtn = essentialBookingModal.querySelector('.close-btn');
+
+
+// When the user clicks the button, open the modal 
+essentialPackageButton.addEventListener('click', () => {
+  essentialBookingModal.style.display = 'block';
+});
+
+// When the user clicks on <span> (x), close the modal
+closeBtn.addEventListener('click', () => {
+  essentialBookingModal.style.display = 'none';
+});
+
+// When the user clicks anywhere outside of the modal, close it
+window.addEventListener('click', (event) => {
+  if (event.target === essentialBookingModal) {
+    essentialBookingModal.style.display = 'none';
+  }
+});
+
+
+</script>
+<script>
+  // Select the Comprehensive package button (adjust selector to your actual button)
+  const comprehensivePackageButton = document.querySelector('.packages-grid .package-card:nth-child(2) .package-btn');
+
+  // Select the modal and its close button
+  const comprehensiveModal = document.getElementById('Comprehensive');
+  const closeComprehensiveBtn = comprehensiveModal.querySelector('.close-btn');
+
+  // Open modal on button click
+  comprehensivePackageButton.addEventListener('click', () => {
+    comprehensiveModal.style.display = 'block';
+  });
+
+  // Close modal on close button click
+  closeComprehensiveBtn.addEventListener('click', () => {
+    comprehensiveModal.style.display = 'none';
+  });
+
+  // Close modal when clicking outside content
+  window.addEventListener('click', (event) => {
+    if (event.target === comprehensiveModal) {
+      comprehensiveModal.style.display = 'none';
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1140,22 +1140,30 @@ body {
   background: linear-gradient(135deg, #0078A0, #005F7A);
 }
 
-
-/* ✅ Mobile fallback — always show button */
+/* ✅ Mobile: buttons always centered and not moving */
 @media (max-width: 768px) {
   .service-item.with-button {
-    padding-bottom: 20px; /* no extra padding needed */
+    text-align: center; /* center text + button */
+    padding-bottom: 20px;
   }
 
   .service-item.with-button .overlay-btn {
-    position: static; /* make it flow under text */
-    display: inline-block;
-    margin-top: 15px;
+    position: static;        /* sit under text */
+    display: block;          /* block makes centering easier */
+    margin: 15px auto 0;     /* auto margins keep it centered */
+    transform: none;         /* remove hover transform effects */
+    opacity: 1;              /* always visible */
+    pointer-events: auto;    /* always clickable */
+    max-width: 220px;        /* keeps buttons neat */
+  }
+
+  /* Remove hover effect on mobile to prevent shifting */
+  .service-item.with-button:hover .overlay-btn {
     transform: none;
-    opacity: 1;
-    pointer-events: auto;
+    left: auto;
   }
 }
+
 
 .service-link {
    text-decoration: none; /* Removes the underline from the link */ 
@@ -1711,6 +1719,8 @@ body {
   display: block;
 }
 
+
+
 /* Main Features Grid */
 .dhe-features-grid {
   display: grid;
@@ -1839,4 +1849,10 @@ body {
     width: auto;
     margin-right: 8px;
     padding: 0;
+}
+
+
+
+body.modal-open {
+  overflow: hidden;
 }
