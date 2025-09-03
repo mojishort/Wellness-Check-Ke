@@ -1071,11 +1071,63 @@ body {
 }
 
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* space between top and bottom rows */
 }
 
+/* Top row: exactly 4 columns */
+.top-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Ensure the bottom row of 3 stays centered */
+.bottom-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center; /* center the 3-column block */
+  grid-column: 1 / -1;     /* span full grid row so it aligns under the 4 above */
+  max-width: 900px;        /* keeps it aligned neatly under the 4 cards */
+  margin: 0 auto;
+}
+
+/* Responsive adjustments for screens smaller than 1024px */
+@media (max-width: 1024px) {
+  .top-row {
+    /* Collapse to 2 columns on tablets */
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bottom-row {
+    /* Collapse to 2 columns on tablets */
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive adjustments for screens smaller than 600px (mobile) */
+@media (max-width: 600px) {
+  .top-row {
+    /* Collapse to a single column on mobile */
+    grid-template-columns: 1fr;
+    max-width: 100%; /* Ensure it spans the full width of the viewport */
+    margin: 0 auto;
+  }
+
+  .bottom-row {
+    /* Collapse to a single column on mobile */
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* Your existing styles (service-item, icon, etc.) can remain as they are */
+/* Your existing media query for `.service-item.with-button` is also correct and handles the button behavior on mobile */
 
 .service-item {
   background: #fafafa;
@@ -1856,3 +1908,88 @@ body {
 body.modal-open {
   overflow: hidden;
 }
+
+
+
+.vip-hero {
+  background: #0B132B;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+.vip-hero h1 {
+  color: #C9A646;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+.vip-hero p {
+  max-width: 800px;
+  margin: 0 auto 25px;
+  color: #E5E5E5;
+}
+
+.vip-section.light { background: #fff; padding: 60px 20px; }
+.vip-section.cream { background: #FDFDFB; padding: 60px 20px; }
+.vip-section.dark { background: #0B132B; color: #fff; padding: 60px 20px; }
+
+.vip-section h2 {
+  color: #0B132B;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+.vip-section.dark h2 { color: #C9A646; }
+
+.vip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+.vip-card {
+  background: #fff;
+  border: 1px solid #E5E5E5;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1rem;
+  color: #4F4F4F;
+}
+.vip-section.dark .vip-card { background:#1A1A1A; color:#fff; }
+
+.vip-list {
+  list-style: none;
+  padding-left: 0;
+}
+.vip-list li {
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.btn-gold {
+  background: #C9A646;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn-gold:hover { background: #b39035; }
+
+.btn-navy {
+  background: #0B132B;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.btn-navy:hover { background: #1E3A8A; }
+
+.vip-cta {
+  background: #0B132B;
+  text-align: center;
+  padding: 70px 20px;
+}
+.vip-cta h2 { color: #C9A646; margin-bottom: 20px; }
+.cta-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
