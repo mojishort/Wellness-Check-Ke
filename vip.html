@@ -37,8 +37,6 @@
     <div class="container">
       <h1 class="hero-title">VIP Home Health Checkup</h1>
       <p class="hero-subtitle">World-class healthcare, delivered to your doorstep. Exclusive care, unmatched privacy.</p>
-      <a href="#book" class="cta-button primary-btn">Book Now</a>
-      <a href="#learn" class="cta-button secondary-btn">Learn More</a>
     </div>
   </section>
 
@@ -153,12 +151,151 @@
     </div>
   </section>
 
-    <section class="cta-banner">
-      <div class="cta-container">
-        <h2>Experience Luxury Healthcare at Your Doorstep</h2>
-        <a href="services.html" class="cta-btn">Book Now</a>
+ <!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+  <div class="container">
+    <h2>What Our Clients Say</h2>
+    <p class="subtitle">Stories from our patients and partners</p>
+
+    <div class="testimonial-slider">
+      <div class="testimonial-track">
+        <div class="testimonial-card">
+          <div class="avatar">J</div>
+          <p class="quote">“The experience was unmatched. 
+              Having a doctor and nurse come to my home, conduct a full health checkup, and deliver results the same day gave me peace of mind. 
+              This is healthcare on another level.”</p>
+          <h4>- James M., CEO & Entrepreneur</h4>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="avatar">S</div>
+          <p class="quote">“I travel often for business, and time is always limited. 
+              The VIP home checkup saved me days of hospital visits. 
+              Everything was handled with discretion, comfort, and professionalism.”</p>
+          <h4>- Sarah W., Diplomat</h4>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="avatar">K</div>
+          <p class="quote">“What impressed me most was the attention to detail. From advanced tests to personalized advice, I felt truly cared for. 
+              It was not just a checkup — it was an experience.”</p>
+          <h4>- Dr. Kevin O., Senior Consultant</h4>
+        </div>
       </div>
+    </div>
+  </div>
+</section>
+
+    <section class="cta-banner">
+    <div class="cta-container">
+        <h2>Experience Luxury Healthcare at Your Doorstep</h2>
+            <!-- Book Now button -->
+        <a href="#book" class="cta-button primary-btn" id="openFormBtn">Book Now</a>
+        <a href="contact.html" class="cta-button secondary-btn">Contact Us</a>
+    </div>
     </section>
+
+
+
+
+<!-- VIP Booking Modal -->
+<div id="vipModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeFormBtn">&times;</span>
+    <h2>VIP Home Health Checkup – Executive Booking Form</h2>
+
+    <form>
+      <!-- 1. Personal Information -->
+      <h3>1. Personal Information</h3>
+      <label>Full Name: <input type="text" name="fullname" required></label><br>
+      <label>Date of Birth / Age: <input type="text" name="dob"></label><br>
+      <label>Gender:
+        <select name="gender">
+          <option>Male</option>
+          <option>Female</option>
+          <option>Other</option>
+        </select>
+      </label><br>
+      <label>Phone Number: <input type="tel" name="phone" required></label><br>
+      <label>Email Address: <input type="email" name="email" required></label><br>
+      <label>Preferred Contact:
+        <select name="contact">
+          <option>Phone</option>
+          <option>WhatsApp</option>
+          <option>Email</option>
+        </select>
+      </label>
+
+      <!-- 2. Appointment Details -->
+      <h3>2. Appointment Details</h3>
+      <label>Preferred Date: <input type="date" name="date"></label><br>
+      <label>Preferred Time: <input type="time" name="time"></label><br>
+      <label>Home Address: <textarea name="address"></textarea></label><br>
+      <label>Special Requests: <textarea name="requests"></textarea></label>
+
+      <!-- 3. Health & Wellness Info -->
+      <h3>3. Health & Wellness Information (Confidential)</h3>
+      <label>Chronic Conditions: <input type="text" name="conditions" placeholder="None or specify"></label><br>
+      <label>Current Medications: <input type="text" name="medications" placeholder="None or list"></label><br>
+      <label>Allergies: <input type="text" name="allergies" placeholder="None or specify"></label><br>
+      <label>Areas of Focus: <textarea name="concerns"></textarea></label>
+<!-- 4. VIP Add-on Options (Optional) -->
+<h3>4. VIP Add-On Options (Optional)</h3>
+<div class="checkbox-group checkbox-grid"> <!-- use .checkbox-grid for 2-column layout -->
+  <div class="checkbox-item">
+    <input type="checkbox" id="followups" name="addons" value="followups">
+    <label for="followups">Quarterly VIP follow-up visits</label>
+  </div>
+
+  <div class="checkbox-item">
+    <input type="checkbox" id="devices" name="addons" value="devices">
+    <label for="devices">Home monitoring devices</label>
+  </div>
+
+  <div class="checkbox-item">
+    <input type="checkbox" id="coaching" name="addons" value="coaching">
+    <label for="coaching">Executive wellness coaching</label>
+  </div>
+
+  <div class="checkbox-item">
+    <input type="checkbox" id="teleconsults" name="addons" value="teleconsults">
+    <label for="teleconsults">Specialist teleconsultations</label>
+  </div>
+</div>
+
+<!-- 5. Consent & Privacy -->
+<h3>5. Consent & Privacy</h3>
+<div class="checkbox-group">
+  <div class="checkbox-item">
+    <input type="checkbox" id="consent1" required>
+    <label for="consent1">I consent to the use of my information strictly for this service.</label>
+  </div>
+  <div class="checkbox-item">
+    <input type="checkbox" id="consent2" required>
+    <label for="consent2">I understand this service includes an on-site doctor consultation.</label>
+  </div>
+</div>
+
+
+      <!-- 6. Payment -->
+      <h3>6. Payment & Confirmation</h3>
+      <label>Preferred Payment:
+        <select name="payment">
+          <option>Mobile Money</option>
+          <option>Debit/Credit Card</option>
+          <option>Bank Transfer</option>
+        </select>
+      </label><br>
+      <label>Billing Address: <textarea name="billing"></textarea></label><br>
+
+      <button type="submit" class="submit-btn">Confirm My VIP Booking</button>
+    </form>
+  </div>
+</div>
+
+
+
+
 
 
 </main>
@@ -193,7 +330,6 @@
       </ul>
     </div>
 
-    <!-- Social -->
     <div class="footer-col">
       <h4>Follow Us</h4>
       <div class="social-links">
@@ -227,5 +363,41 @@
     }, 3000); // switch every 3s
   });
 </script>
+
+<script>
+  const modal = document.getElementById("vipModal");
+  const openBtn = document.getElementById("openFormBtn");
+  const closeBtn = document.getElementById("closeFormBtn");
+
+  openBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    modal.style.display = "block";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target == modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
+<script>
+  const track = document.querySelector('.testimonial-track');
+  const slides = document.querySelectorAll('.testimonial-card');
+  let index = 0;
+
+  function showSlide() {
+    index = (index + 1) % slides.length; // loop back after last
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  // auto-slide every 5 seconds
+  setInterval(showSlide, 5000);
+</script>
+
+
 </body>
 </html>
