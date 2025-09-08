@@ -804,34 +804,6 @@ body {
 }
 
 
-
-/* Trust Stats */
-.trust-stats {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 2rem 0;
-  flex-wrap: wrap;
-}
-
-.trust-stats .stat {
-  text-align: center;
-  font-size: 0.95rem;
-  color: #00AEEF;
-}
-
-.trust-stats .stat .icon {
-  font-size: 1.8rem;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.trust-stats .stat strong {
-  color: #078080; /* teal highlight */
-  font-size: 1.1rem;
-}
-
-
 /* ===== Who We Are Section ===== */
 .who-we-are {
   background: linear-gradient(135deg, #e6f7f9, #d2f1e6);
