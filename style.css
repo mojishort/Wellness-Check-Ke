@@ -191,16 +191,11 @@ body {
 
 /* Hero Section */
 .hero-section {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-
-  /* Background image */
   background: url("images/homepgbg.jpeg") center center/cover no-repeat;
+  background: linear-gradient(135deg, #0B132B, #2C3E50);
+  color: #FFFFFF;
+  text-align: center;
+  padding: 120px 20px;
 }
 @media (max-width: 768px) {
   .hero-section {
@@ -1911,85 +1906,3 @@ body.modal-open {
 
 
 
-.vip-hero {
-  background: #0B132B;
-  color: #fff;
-  text-align: center;
-  padding: 100px 20px;
-}
-.vip-hero h1 {
-  color: #C9A646;
-  font-size: 2.8rem;
-  margin-bottom: 20px;
-}
-.vip-hero p {
-  max-width: 800px;
-  margin: 0 auto 25px;
-  color: #E5E5E5;
-}
-
-.vip-section.light { background: #fff; padding: 60px 20px; }
-.vip-section.cream { background: #FDFDFB; padding: 60px 20px; }
-.vip-section.dark { background: #0B132B; color: #fff; padding: 60px 20px; }
-
-.vip-section h2 {
-  color: #0B132B;
-  margin-bottom: 20px;
-  font-size: 1.8rem;
-}
-.vip-section.dark h2 { color: #C9A646; }
-
-.vip-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 20px;
-}
-.vip-card {
-  background: #fff;
-  border: 1px solid #E5E5E5;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 1rem;
-  color: #4F4F4F;
-}
-.vip-section.dark .vip-card { background:#1A1A1A; color:#fff; }
-
-.vip-list {
-  list-style: none;
-  padding-left: 0;
-}
-.vip-list li {
-  margin-bottom: 12px;
-  font-size: 1rem;
-}
-
-.btn-gold {
-  background: #C9A646;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-.btn-gold:hover { background: #b39035; }
-
-.btn-navy {
-  background: #0B132B;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-.btn-navy:hover { background: #1E3A8A; }
-
-.vip-cta {
-  background: #0B132B;
-  text-align: center;
-  padding: 70px 20px;
-}
-.vip-cta h2 { color: #C9A646; margin-bottom: 20px; }
-.cta-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
