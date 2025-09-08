@@ -192,7 +192,6 @@ body {
 /* Hero Section */
 .hero-section {
   background: url("images/homepgbg.jpeg") center center/cover no-repeat;
-  background: linear-gradient(135deg, #0B132B, #2C3E50);
   color: #FFFFFF;
   text-align: center;
   padding: 120px 20px;
@@ -207,11 +206,22 @@ body {
 
 
 
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background: url("images/homepgbg.jpeg") center center/cover no-repeat;
+}
+
 /* Overlay */
 .hero-overlay {
   position: absolute;
   inset: 0;
-  /* Dark gradient overlay for readability */
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
   z-index: 1;
 }
@@ -219,11 +229,11 @@ body {
 .hero-content {
   position: relative;
   z-index: 2;
+  backdrop-filter: blur(3px);
   height: 300px;
-  max-width: 700px;
+  max-width: 800px;
   padding: 0 20px;
   animation: fadeInUp 1.5s ease forwards;
-  backdrop-filter: blur(5px);
 }
 
 /* Title & Text Animations */
@@ -284,6 +294,7 @@ body {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
 
 
 
