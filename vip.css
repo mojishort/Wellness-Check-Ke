@@ -49,23 +49,25 @@ body {
 
 /* Logo wrapper */
 .header .logo {
-  height: 90px;
+  height: 90px;              /* fix logo area */
   display: flex;
-  align-items: center;
+  align-items: center;       /* vertical centering */
 }
 
-/* Logo image */
+/* Default: logo shows as black */
 .header .logo img {
   height: 100%;
   width: 125px;
   display: block;
-  transition: filter 0.5s ease-in-out; /* Add transition for a smooth filter change */
+  transition: filter 0.3s ease;
+  filter: invert(0%) brightness(100%);
 }
 
-/* Logo image in 'scrolled' state */
-.header.scrolled .logo img {
-  filter: invert(1) grayscale(1); /* Changes a white logo to black */
+/* When header overlaps dark sections */
+.header.dark-mode .logo img {
+  filter: invert(100%) brightness(200%);
 }
+
 
 
 .navbar ul {
