@@ -1893,32 +1893,53 @@ body.modal-open {
 
 
 
+
 /* Contact Page Layout */
 .Contact {
   background: rgba(243, 237, 237, 0.5);
   animation: fadeInUp 1.5s ease forwards;
+  /* Remove padding from here */
 }
 
+/* Contact Page Layout */
+.Contact {
+    background: rgba(243, 237, 237, 0.5);
+    animation: fadeInUp 1.5s ease forwards;
+}
 
 /* Responsive: stack fields to 1 column */
 @media (max-width: 768px) {
-  .contact-container {
-    flex-direction: column;
-  }
-  .contact-form {
-    width: 100%;
-  }
+    .contact-container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    /* Force the form to take 90% of the width and center it */
+    .contact-container form {
+        width: 90% !important;
+        margin: 20px auto !important;
+    }
+
+    .contact-form {
+        width: 100% !important;
+        margin-left: 0 !important;
+    }
+
+    .contact-info-side {
+        width: 90% !important;
+        max-width: 100%;
+        margin: 20px auto !important;
+        padding: 2rem !important;
+    }
 }
 
 
 
-
-.Contact h3{
+.Contact h3 {
   text-align: center;
   font-weight: 600;
   font-size: 2rem;
 }
-
 
 .contact-container {
   display: flex;
@@ -1933,7 +1954,8 @@ body.modal-open {
   margin-left: 25px;
   margin-bottom: 10px;
 }
-.contact-form p{
+
+.contact-form p {
   font-style: italic;
   color: #000;
   text-align: center;
@@ -1945,34 +1967,36 @@ body.modal-open {
   margin-top: 20px;
 }
 
-
 .contact-form label {
   color: #141515;
   display: block;
   margin-bottom: 5px;
 }
-.contact-form input, .contact-form textarea {
+
+.contact-form input,
+.contact-form textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   background: transparent;
-  color:  #0d0d0d;
+  color: #0d0d0d;
   font-weight: bold;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
 .contact-form .submit-btn {
   background: linear-gradient(135deg, #00AEEF, #0078A0);
-  color:  #ffffff;
+  color: #ffffff;
   border: none;
   cursor: pointer;
 }
+
 .contact-form .submit-btn:hover {
   transform: translateY(-2px);
   background: linear-gradient(135deg, #0078A0, #005F7A);
 }
-
 
 .contact-info-side {
   flex: 1;
@@ -1983,9 +2007,9 @@ body.modal-open {
   background-color: rgba(255, 255, 255, 0.05);
   padding: 2rem;
   border-radius: 10px;
-  color:  #3596c6;
+  color: #3596c6;
   line-height: 1.6;
-  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   max-width: 400px;
 }
 
@@ -2004,13 +2028,12 @@ body.modal-open {
 }
 
 .contact-info-side p::before {
-  font-family: 'Font Awesome 6 Free'; /* or Material Icons if you're using them */
+  font-family: 'Font Awesome 6 Free';
   font-weight: 900;
   display: inline-block;
   width: 20px;
   text-align: center;
 }
-
 
 .contact-info-side p a {
   color: #030303;
@@ -2020,8 +2043,6 @@ body.modal-open {
 .contact-info-side p a:hover {
   color: #1ab5d0;
 }
-
-
 
 .contact-info-side h4 {
   margin-top: 2rem;
@@ -2047,4 +2068,3 @@ body.modal-open {
   background: #0b96c1;
   transform: translateY(-3px);
 }
-

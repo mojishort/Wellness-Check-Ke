@@ -578,12 +578,15 @@ h2.section-title::after {
   align-items: center;       /* vertical centering */
 }
 
-/* Logo image */
+/* Footer Logo */
 .footer-col .logo img {
-  height: 100%;              /* fills the 60px height */
-  width: 125px;               /* keeps proportions */
+  height: 100%;
+  width: 125px;
   display: block;
+  filter: invert(100%) brightness(200%); /* makes logo white on dark bg */
+  transition: filter 0.3s ease;
 }
+
 
 .footer-col h4 {
   font-size: 1.2rem;
