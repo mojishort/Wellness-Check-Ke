@@ -31,44 +31,46 @@
   </nav>
 </header>
 
-
-
+  <main class="Contact">
+        <h3>Contact Us</h3>
         <div class="contact-container" data-aos="fade-up">
           <!-- Left: Contact Form -->
-          <div class="contact-form-side">
-            <h1>Contact Us</h1>
-            <p>We’d love to hear from you! Fill the form below:</p>
-            <form class="contact-form">
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Your Email" required />
-              <textarea placeholder="Your Message" rows="5" required></textarea>
-              <button type="submit">Send Message</button>
+            <form action="submit_form.php" method="post">
+            <div class="contact-form">
+                <p>Have a question, comment, or feedback? We'd love to hear from you!</p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="submit-btn">Send</button>
+            </div>
             </form>
-          </div>
 
           <!-- Right: Contact Details -->
           <div class="contact-info-side">
             <h2>Reach Us</h2>
-            <p><strong>Email:</strong> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=axissurveyskenya@gmail.com&su=Inquiry&body=Hello Axis+ Surveys," target="_blank">axissurveyskenya@gmail.com</a></p>
-            <p><strong>Phone:</strong><a href="tel:+254746177096">(+254) 746 177 096</a></p>
-            <p><strong>Location:</strong> Kiambu Town</p>
+            <p><strong>Email:</strong> <a href="#">info@wellness360.co.ke</a></p>
+            <p><strong>Phone:</strong>(+254) 748 020 154</></p>
+            <p><strong>Location:</strong>Nairobi, Kenya</p>
 
-            <h3>Connect with Us</h3>
-              <div class="footer-socials">
-                <a href="https://web.facebook.com/profile.php?id=61571776599909"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/axissurveyske/"><i class="fab fa-instagram"></i></a>
-                <a href="https://wa.me/254746177096" target="_blank"><i class="fab fa-whatsapp"></i></a>
-              </div>
-
-                <a href="https://www.google.com/maps/place/Kiambu+Town,+Kenya" target="_blank" class="find-us-btn" title="Find Us on Map">
-                  <i class="fas fa-map-marker-alt"></i>
-                </a>
+            <h4>Connect with Us</h4>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/254748020154" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
           </div>
           
         </div>
 
-
+  </main>
 
 
 <footer class="footer" id="contact">

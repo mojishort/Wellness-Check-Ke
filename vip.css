@@ -249,12 +249,19 @@ h2.section-title::after {
 /* --- */
 
 /* Page Layout and Sections */
+
+
+
+.DHE {
+  animation: fadeInUp 1.5s ease forwards;
+}
+
 .hero-section {
   background: linear-gradient(135deg, #0B132B, #2C3E50);
   color: #FFFFFF;
   text-align: center;
   padding: 120px 20px;
-   animation: fadeInUp 1.2s ease-out both;
+  animation: fadeInUp 1.5s ease forwards;
 }
 
 .hero-title {
@@ -687,6 +694,18 @@ h2.section-title::after {
   color: #444;
 }
 
+@media (max-width: 768px) {
+  .dhe-intro-card {
+    flex-direction: column;
+  }
+  .dhe-intro-card .intro-content {
+    padding: 20px;
+  }
+  .dhe-intro-card .intro-image.slideshow-container {
+    width: 90%;
+  }
+}
+
 
 
 /* Slideshow container */
@@ -695,7 +714,7 @@ h2.section-title::after {
   width: 50%;
   height: 400px;
   overflow: hidden;
-  margin-right: 10px;
+  margin: 10px;
   border-radius: 5px;
 }
 

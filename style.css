@@ -1891,3 +1891,160 @@ body.modal-open {
 
 
 
+
+
+/* Contact Page Layout */
+.Contact {
+  background: rgba(243, 237, 237, 0.5);
+  animation: fadeInUp 1.5s ease forwards;
+}
+
+
+/* Responsive: stack fields to 1 column */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-form {
+    width: 100%;
+  }
+}
+
+
+
+
+.Contact h3{
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: flex-start;
+  backdrop-filter: blur(8px);
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+.contact-form p{
+  font-style: italic;
+  color: #000;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.contact-container form {
+  width: calc(50% - 10px);
+  margin-top: 20px;
+}
+
+
+.contact-form label {
+  color: #141515;
+  display: block;
+  margin-bottom: 5px;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: transparent;
+  color:  #0d0d0d;
+  font-weight: bold;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-form .submit-btn {
+  background: linear-gradient(135deg, #00AEEF, #0078A0);
+  color:  #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.contact-form .submit-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #0078A0, #005F7A);
+}
+
+
+.contact-info-side {
+  flex: 1;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  height: 380px;
+  min-width: 300px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 10px;
+  color:  #3596c6;
+  line-height: 1.6;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  max-width: 400px;
+}
+
+.contact-info-side h2 {
+  font-size: 1.5rem;
+  color: #1ab5d0;
+  margin-bottom: 1rem;
+}
+
+.contact-info-side p {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: #000;
+}
+
+.contact-info-side p::before {
+  font-family: 'Font Awesome 6 Free'; /* or Material Icons if you're using them */
+  font-weight: 900;
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+}
+
+
+.contact-info-side p a {
+  color: #030303;
+  text-decoration: none;
+}
+
+.contact-info-side p a:hover {
+  color: #1ab5d0;
+}
+
+
+
+.contact-info-side h4 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #1ab5d0;
+}
+
+.contact-info-side .social-links a {
+  width: 36px;
+  height: 36px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border-radius: 50%;
+  color: #000000;
+  font-size: 1.2rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-info-side .social-links a:hover {
+  background: #0b96c1;
+  transform: translateY(-3px);
+}
+
