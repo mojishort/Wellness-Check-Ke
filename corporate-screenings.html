@@ -94,7 +94,8 @@
         <span class="close-btn">&times;</span>
         <h2 id="form-heading" class="form-title"></h2>
         <p class="form-subheading">Book a Corporate Wellness Program for Your Team</p>
-        <form action="#" method="POST" id="booking-form">
+        <form action="booking_submit.php" method="POST" id="booking-form">
+
         <label for="company-name">Company Name*</label>
         <input type="text" id="company-name" name="company-name" required>
 
@@ -107,8 +108,9 @@
         <label for="phone">Phone Number*</label>
         <input type="tel" id="phone" name="phone" required>
 
-        <label for="home address">Location*</label>
-        <input type="text" id="Location" name="employees" required placeholder="Format (County, Town, Organization/Building)">
+        <label for="location">Location*</label>
+        <input type="text" id="location" name="location" required placeholder="Format (County, Town, Organization/Building)">
+
 
         <label for="employees">Number of Employees*</label>
         <input type="number" id="employees" name="employees" required min="1">
@@ -224,6 +226,17 @@
     }
   });
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get("success") === "1") {
+    const packageBooked = urlParams.get("package") || "your selected package";
+    alert(`✅ Thank you for booking the ${packageBooked} package! You will receive an email with pricing and payment details.`);
+  }
+});
+</script>
+
 
 </body>
 </html>
