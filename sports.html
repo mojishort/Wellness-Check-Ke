@@ -12,7 +12,6 @@
 </head>
 <body>
 
-<!-- Header -->
 <header class="header">
   <div class="logo">
     <img src="images/logo4.png" alt="Wellness Check Kenya Logo">
@@ -36,7 +35,6 @@
 
 
 <main>
-<!-- Sports & Fitness Page -->
 <section class="corporate-screenings-page">
   <h1 class="page-title">Sports & Fitness Health Checks</h1>
   <p class="page-intro">
@@ -47,8 +45,9 @@
     prevent injuries, and optimize overall health.
   </p>
 
+  <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
+
   <div class="packages-grid">
-    <!-- Essential Package -->
     <div class="package-card">
       <div class="icon"><i class="fas fa-dumbbell"></i></div>
       <h3>Essential Package</h3>
@@ -61,10 +60,9 @@
         <li><strong>Mental Performance Screening:</strong> Identify stress, focus, or motivation risks with brief guidance and referral if needed.</li>
       </ul>
       <p class="package-description"><em>Deliverables:</em> Personalized Fitness & Injury Risk Report with exercise, recovery, and lifestyle recommendations.</p>
-        <button class="package-btn" data-package="essential">Choose This Package</button>
+      <button class="package-btn" data-package="essential">Choose This Package</button>
     </div>
 
-    <!-- Comprehensive Package -->
     <div class="package-card">
       <div class="icon"><i class="fas fa-heartbeat"></i></div>
       <h3>Comprehensive Package</h3>
@@ -78,6 +76,27 @@
       <p class="package-description"><em>Deliverables:</em> Comprehensive Fitness & Injury Risk Report with detailed specialist recommendations, exercise plans, and recovery guidance.</p>
     <button class="package-btn" data-package="comprehensive">Choose This Package</button>
     </div>
+
+    <div class="package-card">
+      <div class="icon"><i class="fas fa-users"></i></div>
+      <h3>Team Fitness Package</h3>
+      <p class="package-description">Wellness & Performance for Groups (10+ participants)</p>
+      <ul class="package-list">
+        <li>All <strong>Essential Package</strong> and <strong>Comprehensive</strong> screenings, delivered in a group format.</li>
+        <li>Efficient bulk health checks for 10+ participants.</li>
+        <li>Discounted group pricing for affordable wellness access.</li>
+        <br>
+        <p><strong>Exclusive Benefits for Gyms & Teams:</strong></p>
+        <ul>
+          <li>Co-branded reports with your gym/team’s name.</li>
+          <li>A Group Wellness Summary Report with overall trends & risks.</li>
+          <li>“Wellness Day” events to boost member engagement & enrollment.</li>
+        </ul>
+      </ul>
+      <p class="package-description"><em>Deliverables:</em> Individual fitness & injury risk reports, group insights & recommendations, and options for recurring screenings.</p>
+      <button class="package-btn" data-package="team">Choose This Package</button>
+    </div>
+
   </div>
 </section>
 
@@ -185,9 +204,6 @@
 </div>
 
 
-
-
-
 <div id="Comprehensive" class="modal">
   <div class="modal-content">
     <span class="close-btn">&times;</span>
@@ -291,6 +307,134 @@
   </div>
 </div>
 
+<div id="teamBookingModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2 class="form-title">Booking Form</h2>
+    <p class="form-subheading">🟠 Team Fitness Package Booking Form</p>
+
+    <form action="#" method="POST" id="team-form">
+      <h3>1. Contact Details</h3>
+      <div class="form-section-container">
+        <div class="form-field-group">
+          <label for="team-name">Gym / Organization / Team Name*</label>
+          <input type="text" id="team-name" name="team-name" required>
+        </div>
+        <div class="form-field-group">
+          <label for="contact-name">Contact Person (Full Name)*</label>
+          <input type="text" id="contact-name" name="contact-name" required>
+        </div>
+        <div class="form-field-group">
+          <label for="position">Position / Role</label>
+          <input type="text" id="position" name="position">
+        </div>
+        <div class="form-field-group">
+          <label for="team-phone">Phone Number* (+254 7XX XXX XXX)</label>
+          <input type="tel" id="team-phone" name="team-phone" placeholder="+254 7XX XXX XXX" required>
+        </div>
+        <div class="form-field-group">
+          <label for="team-email">Email Address*</label>
+          <input type="email" id="team-email" name="team-email" required>
+        </div>
+      </div>
+
+      <h3>2. Package Details</h3>
+      <div class="form-section-container">
+        <div class="form-field-group">
+          <label>Package Type</label>
+          <div class="radio-group">
+            <input type="radio" id="team-essential" name="package-type" value="Team Essential" required>
+            <label for="team-essential">Team Essential Fitness Check</label>
+            <br>
+            <input type="radio" id="team-comprehensive" name="package-type" value="Team Comprehensive">
+            <label for="team-comprehensive">Team Comprehensive Fitness Check</label>
+          </div>
+        </div>
+        <div class="form-field-group">
+          <label for="num-participants">Number of Participants* (Minimum 10)</label>
+          <input type="number" id="num-participants" name="num-participants" min="10" required>
+        </div>
+      </div>
+
+      <h3>3. Preferred Location</h3>
+      <div class="form-section-container">
+        <div class="form-field-group">
+          <div class="radio-group">
+            <input type="radio" id="location-gym" name="location-type" value="At Our Gym / Fitness Center" required>
+            <label for="location-gym">At Our Gym / Fitness Center</label>
+            <br>
+            <input type="radio" id="location-school" name="location-type" value="At School / Sports Facility">
+            <label for="location-school">At School / Sports Facility</label>
+            <br>
+            <input type="radio" id="location-other" name="location-type" value="Other">
+            <label for="location-other">Other (specify)</label>
+          </div>
+          <div class="form-field-group" style="margin-top: 10px;">
+            <label for="location-address">Location / Venue Address*</label>
+            <input type="text" id="location-address" name="location-address" required>
+          </div>
+        </div>
+      </div>
+
+      <h3>4. Preferred Date & Time</h3>
+      <div class="form-section-container">
+        <div class="form-field-group">
+          <label for="team-date">Date (dd/mm/yyyy)</label>
+          <input type="date" id="team-date" name="team-date" required>
+        </div>
+        <div class="form-field-group">
+          <label for="team-time">Time (--:--)</label>
+          <input type="time" id="team-time" name="team-time" required>
+        </div>
+      </div>
+
+      <h3>5. Team Background (Optional)</h3>
+      <div class="form-field-group">
+        <label for="sport-activity">Type of Sport / Fitness Activity</label>
+        <input type="text" id="sport-activity" name="sport-activity">
+      </div>
+      <div class="form-field-group">
+        <label>Level of Training</label>
+        <div class="radio-group">
+          <input type="radio" id="recreational" name="training-level" value="Recreational">
+          <label for="recreational">Recreational</label>
+          <input type="radio" id="semi-pro" name="training-level" value="Semi-Pro">
+          <label for="semi-pro">Semi-Pro</label>
+          <input type="radio" id="professional" name="training-level" value="Professional">
+          <label for="professional">Professional</label>
+        </div>
+      </div>
+      <div class="form-field-group">
+        <label for="team-concerns">Recent Team Injuries / Common Concerns</label>
+        <textarea id="team-concerns" name="team-concerns" rows="4"></textarea>
+      </div>
+
+      <h3>6. Co-Branding Request (Optional)</h3>
+      <div class="form-field-group">
+        <label>Would you like your logo / gym branding integrated into participant reports?</label>
+        <div class="radio-group">
+          <input type="radio" id="branding-yes" name="co-branding" value="Yes">
+          <label for="branding-yes">Yes</label>
+          <input type="radio" id="branding-no" name="co-branding" value="No">
+          <label for="branding-no">No</label>
+        </div>
+      </div>
+
+      <h3>7. Consent & Agreement</h3>
+      <div class="consent-box">
+        <input type="checkbox" id="consent-participants" name="consent-participants" required>
+        <label for="consent-participants">I confirm that all participants will provide individual consent before screening.</label>
+      </div>
+      <div class="consent-box">
+        <input type="checkbox" id="consent-service" name="consent-service" required>
+        <label for="consent-service">I understand this is a health screening service only and not a substitute for medical treatment.</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Booking ✅</button>
+    </form>
+  </div>
+</div>
+
 
 </main>
 
@@ -300,7 +444,6 @@
 
 
 
-<!-- Footer -->
 <footer class="footer" id="contact">
   <div class="footer-container">
     <div class="footer-col">
@@ -331,7 +474,6 @@
       </ul>
     </div>
 
-    <!-- Social -->
     <div class="footer-col">
       <h4>Follow Us</h4>
       <div class="social-links">
@@ -399,6 +541,30 @@ window.addEventListener('click', (event) => {
   window.addEventListener('click', (event) => {
     if (event.target === comprehensiveModal) {
       comprehensiveModal.style.display = 'none';
+    }
+  });
+</script>
+
+<script>
+  // Script for the new Team Fitness Package modal
+  const teamPackageButton = document.querySelector('.packages-grid .package-card:nth-child(3) .package-btn');
+  const teamBookingModal = document.getElementById('teamBookingModal');
+  const closeTeamBtn = teamBookingModal.querySelector('.close-btn');
+
+  // Open modal on button click
+  teamPackageButton.addEventListener('click', () => {
+    teamBookingModal.style.display = 'block';
+  });
+
+  // Close modal on close button click
+  closeTeamBtn.addEventListener('click', () => {
+    teamBookingModal.style.display = 'none';
+  });
+
+  // Close modal when clicking outside content
+  window.addEventListener('click', (event) => {
+    if (event.target === teamBookingModal) {
+      teamBookingModal.style.display = 'none';
     }
   });
 </script>
