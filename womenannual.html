@@ -94,7 +94,7 @@
     <span class="close-btn">&times;</span>
     <h2 id="form-heading" class="form-title">Book Your Package</h2>
     <p class="form-subheading">Book a Women’s Annual Health Checkup Program</p>
-    <form action="#" method="POST" id="booking-form">
+    <form action="booking_submit.php" method="POST" id="booking-form">
       <label for="full-name">Full Name*</label>
       <input type="text" id="full-name" name="full-name" required>
 
@@ -112,6 +112,10 @@
 
       <label for="time">Preferred Time*</label>
       <input type="time" id="time" name="time" required>
+
+      <!-- Hidden fields -->
+      <input type="hidden" name="form_type" value="women">
+      <input type="hidden" id="package" name="package" value="">
 
       <button type="submit" class="submit-btn">Submit Booking</button>
     </form>
@@ -182,6 +186,7 @@
     btn.addEventListener("click", () => {
       const packageName = btn.getAttribute("data-package") || "Selected Package";
       formHeading.textContent = `Booking: ${packageName}`;
+      document.getElementById("package").value = packageName; // ✅ pass to hidden field
       modal.style.display = "block";
     });
   });

@@ -33,7 +33,6 @@
   </nav>
 </header>
 
-
 <main>
   <section class="corporate-screenings-page">
     <div class="container">
@@ -42,134 +41,138 @@
         Can’t make it to a clinic? We’ll come to you! Our home-based checkups are perfect for busy individuals, families, or those who prefer the comfort of their own home.
       </p>
 
-        <div class="packages-grid">
+      <div class="packages-grid">
+        <!-- Essential Screening -->
         <div class="package-card">
-            <div class="icon"><i class="fa-solid fa-heart-pulse"></i></div>
-            <h3>Essential Screening</h3>
-            <p class="package-description">
+          <div class="icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <h3>Essential Screening</h3>
+          <p class="package-description">
             A quick and affordable checkup to monitor your vital signs, detect early risks, and give you a personalized wellness consultation.
-            </p>
+          </p>
 
-            <!-- Services Section -->
-            <div class="package-section">
+          <div class="package-section">
             <h4>Services Included:</h4>
             <ul class="package-list">
-                <li><strong>Blood Pressure & Heart Rate</strong></li>
-                <li><strong>Blood Sugar Test:</strong> Random/Fasting</li>
-                <li><strong>BMI & Weight Check</strong></li>
-                <li><strong>General Wellness Consultation</strong></li>
+              <li><strong>Blood Pressure & Heart Rate</strong></li>
+              <li><strong>Blood Sugar Test:</strong> Random/Fasting</li>
+              <li><strong>BMI & Weight Check</strong></li>
+              <li><strong>General Wellness Consultation</strong></li>
             </ul>
-            </div>
+          </div>
 
-            <!-- Teleconsultation Section -->
-            <div class="package-section">
+          <div class="package-section">
             <h4>Teleconsultation:</h4>
             <ul class="package-list">
-                <li>Not included by default</li>
-                <li>Can be added if results require doctor review</li>
+              <li>Not included by default</li>
+              <li>Can be added if results require doctor review</li>
             </ul>
-            </div>
+          </div>
 
-            <button class="package-btn" data-package="Essential Screening">Choose This Package</button>
+          <button class="package-btn" data-package="Essential Screening">Choose This Package</button>
         </div>
 
-        <!-- Standard Wellness -->
+        <!-- Comprehensive Screening -->
         <div class="package-card">
-            <div class="icon"><i class="fa-solid fa-user-md"></i></div>
-            <h3>Comprehensive Screening</h3>
-            <p class="package-description">
+          <div class="icon"><i class="fa-solid fa-user-md"></i></div>
+          <h3>Comprehensive Screening</h3>
+          <p class="package-description">
             A detailed health assessment that uncovers hidden risks, gives you deeper insights, and includes personalized nutrition and lifestyle guidance.
-            </p>
+          </p>
 
-            <div class="package-section">
+          <div class="package-section">
             <h4>Services Included:</h4>
             <ul class="package-list">
-                <li><strong>Everything in the Basic Package</strong></li>
-                <li><strong>Urine analysis </strong>(sugar, protein, infection indicators)</li>
-                <li><strong>Nutrition & lifestyle counseling</strong></li>
+              <li><strong>Everything in the Basic Package</strong></li>
+              <li><strong>Urine analysis </strong>(sugar, protein, infection indicators)</li>
+              <li><strong>Nutrition & lifestyle counseling</strong></li>
             </ul>
-            </div>
+          </div>
 
-            <div class="package-section">
+          <div class="package-section">
             <h4>Teleconsultation:</h4>
             <ul class="package-list">
-                <li>Includes a lite doctor teleconsultation (5–10 min)</li>
-                <li>Option to upgrade for a longer session</li>
+              <li>Includes a lite doctor teleconsultation (5–10 min)</li>
+              <li>Option to upgrade for a longer session</li>
             </ul>
-            </div>
+          </div>
 
-            <button class="package-btn" data-package="Comprehensive Screening">Choose This Package</button>
+          <button class="package-btn" data-package="Comprehensive Screening">Choose This Package</button>
         </div>
 
-        <!-- Comprehensive Care -->
+        <!-- Family Wellness Package -->
         <div class="package-card">
-            <div class="icon"><i class="fa-solid fa-people-group"></i></div>
-            <h3>Family Wellness Package</h3>
-            <p class="package-description">
+          <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+          <h3>Family Wellness Package</h3>
+          <p class="package-description">
             (Up to 4 members & more)<br>
             A cost-effective way to check the whole family’s health in one visit, identify shared risks, and receive tailored household wellness advice.
-            </p>
+          </p>
 
-            <div class="package-section">
+          <div class="package-section">
             <h4>Services Included:</h4>
             <ul class="package-list">
-                <li><strong>Basic screening</strong>(Basic Package) for each family member</li>
-                <li><strong>One summarized family health risk report</strong></li>
-                <li><strong>Free nutrition/lifestyle counseling session</strong> (household-focused)</li>
+              <li><strong>Basic screening</strong>(Basic Package) for each family member</li>
+              <li><strong>One summarized family health risk report</strong></li>
+              <li><strong>Free nutrition/lifestyle counseling session</strong> (household-focused)</li>
             </ul>
-            </div>
+          </div>
 
-            <div class="package-section">
+          <div class="package-section">
             <h4>Teleconsultation:</h4>
             <ul class="package-list">
-                <li>Includes a household teleconsultation (10–15 min) with a doctor</li>
-                <li>Option to add individual teleconsultations if needed</li>
+              <li>Includes a household teleconsultation (10–15 min) with a doctor</li>
+              <li>Option to add individual teleconsultations if needed</li>
             </ul>
-            </div>
+          </div>
 
-            <button class="package-btn" data-package="Family Wellness Package">Choose This Package</button>
+          <button class="package-btn" data-package="Family Wellness Package">Choose This Package</button>
         </div>
-        </div>
+      </div>
 
-
-
-
-        
       <!-- Booking Modal -->
       <div id="booking-modal" class="modal">
         <div class="modal-content">
           <span class="close-btn">&times;</span>
           <h2 id="form-heading" class="form-title"></h2>
           <p class="form-subheading">Book a Home-Based Screening Program</p>
-          <form action="#" method="POST" id="booking-form">
-            <label for="full name">Full Name*</label>
-            <input type="text" id="company-name" name="company-name" required>
+            <!-- inside your form -->
+            <form action="booking_submit.php" method="POST" id="booking-form">
+              <!-- form type for backend -->
+              <input type="hidden" name="form_type" value="homebased">
 
-            <label for="email">Email*</label>
-            <input type="email" id="email" name="email" required>
+              <!-- hidden package (JS will set value) -->
+              <input type="hidden" name="package" id="selected-package">
 
-            <label for="phone">Phone Number*</label>
-            <input type="tel" id="phone" name="phone" required>
+              <label for="contact-person">Full Name*</label>
+              <input type="text" id="contact-person" name="contact-person" required>
 
-            <label for="home address">Home Address*</label>
-            <input type="text" id="Location" name="employees" required>
+              <label for="email">Email*</label>
+              <input type="email" id="email" name="email" required>
 
-            <label for="date">Preferred Date*</label>
-            <input type="date" id="date" name="date" required>
+              <label for="phone">Phone Number*</label>
+              <input type="tel" id="phone" name="phone" required>
 
-            <label for="time">Preferred Time*</label>
-            <input type="time" id="time" name="time" required>
+              <label for="location">Home Address*</label>
+              <input type="text" id="location" name="location" required>
 
-            <button type="submit" class="submit-btn">Submit Booking</button>
-          </form>
+              <!-- Participants Field (hidden by default) -->
+              <label for="participants" id="participants-label" style="display:none;">Number of Participants*</label>
+              <input type="number" id="participants" name="participants" min="1" style="display:none;">
+
+              <label for="date">Preferred Date*</label>
+              <input type="date" id="date" name="date" required>
+
+              <label for="time">Preferred Time*</label>
+              <input type="time" id="time" name="time" required>
+
+              <button type="submit" class="submit-btn">Submit Booking</button>
+            </form>
+
         </div>
       </div>
-
     </div>
   </section>
 </main>
-
-
 
 <!-- Footer -->
 <footer class="footer" id="contact">
@@ -227,18 +230,33 @@
   const btns = document.querySelectorAll('.package-btn');
   const span = document.querySelector('.close-btn');
   const formHeading = document.getElementById('form-heading');
+  const participantsLabel = document.getElementById('participants-label');
+  const participantsInput = document.getElementById('participants');
+  const hiddenPackage = document.getElementById('selected-package');
 
   btns.forEach(btn => {
     btn.addEventListener('click', () => {
       const packageName = btn.getAttribute('data-package');
       formHeading.textContent = `${packageName} Booking Form`;
+      hiddenPackage.value = packageName; // ✅ send with form
       modal.style.display = 'block';
+
+      if (packageName === "Family Wellness Package") {
+        participantsLabel.style.display = 'block';
+        participantsInput.style.display = 'block';
+        participantsInput.required = true;
+      } else {
+        participantsLabel.style.display = 'none';
+        participantsInput.style.display = 'none';
+        participantsInput.required = false;
+      }
     });
   });
 
   span.addEventListener('click', () => { modal.style.display = 'none'; });
   window.addEventListener('click', (event) => { if (event.target == modal) modal.style.display = 'none'; });
 </script>
+
 <script src="script.js"></script>
 </body>
 </html>

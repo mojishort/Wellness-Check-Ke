@@ -1238,6 +1238,9 @@ body {
   gap: 30px;
 }
 
+
+
+
 .package-card {
   background: #fff;
   padding: 30px;
@@ -1279,6 +1282,12 @@ body {
   padding: 0;
   margin: 0;
 }
+
+.package-list .nested-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 
 .package-list li {
   position: relative;
@@ -2068,32 +2077,3 @@ body.modal-open {
   background: #0b96c1;
   transform: translateY(-3px);
 }
-
-
-
-
-
-
-#map {
-      height: 300px;
-      width: 100%;
-      margin-top: 10px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
-    .autocomplete-suggestions {
-      border: 1px solid #ccc;
-      max-height: 150px;
-      overflow-y: auto;
-      background: white;
-      position: absolute;
-      z-index: 1000;
-      width: calc(100% - 20px);
-    }
-    .autocomplete-suggestions div {
-      padding: 8px;
-      cursor: pointer;
-    }
-    .autocomplete-suggestions div:hover {
-      background: #f0f0f0;
-    }
