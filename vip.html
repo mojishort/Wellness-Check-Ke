@@ -212,7 +212,7 @@
     <span class="close-btn" id="closeFormBtn">&times;</span>
     <h2>VIP Home Health Checkup – Executive Booking Form</h2>
 
-    <form>
+    <form action="vip_booking_submit.php" method="POST">
       <!-- 1. Personal Information -->
       <h3>1. Personal Information</h3>
       <label>Full Name: <input type="text" name="fullname" required></label><br>
@@ -247,43 +247,117 @@
       <label>Current Medications: <input type="text" name="medications" placeholder="None or list"></label><br>
       <label>Allergies: <input type="text" name="allergies" placeholder="None or specify"></label><br>
       <label>Areas of Focus: <textarea name="concerns"></textarea></label>
-<!-- 4. VIP Add-on Options (Optional) -->
-<h3>4. VIP Add-On Options (Optional)</h3>
-<div class="checkbox-group checkbox-grid"> <!-- use .checkbox-grid for 2-column layout -->
-  <div class="checkbox-item">
-    <input type="checkbox" id="followups" name="addons" value="followups">
-    <label for="followups">Quarterly VIP follow-up visits</label>
-  </div>
 
-  <div class="checkbox-item">
-    <input type="checkbox" id="devices" name="addons" value="devices">
-    <label for="devices">Home monitoring devices</label>
-  </div>
 
-  <div class="checkbox-item">
-    <input type="checkbox" id="coaching" name="addons" value="coaching">
-    <label for="coaching">Executive wellness coaching</label>
-  </div>
+      <!-- 4. VIP Add-On Options (Optional) -->
+      <h3>4. VIP Add-On Options (Optional)</h3>
 
-  <div class="checkbox-item">
-    <input type="checkbox" id="teleconsults" name="addons" value="teleconsults">
-    <label for="teleconsults">Specialist teleconsultations</label>
-  </div>
-</div>
+      <!-- 4.1 Quarterly Follow-Up Visits (Single Choice) -->
+      <div class="form-group">
+        <label for="followups"><strong>Quarterly VIP Follow-Up Visits</strong></label>
+        <select name="followups" id="followups">
+          <option value="">-- Select a plan --</option>
+          <option value="quarterly">Quarterly Subscription → 4 visits/year</option>
+          <option value="halfyearly">Half-Yearly Subscription → 2 visits/year</option>
+          <option value="annual">Annual Subscription → 1 visit/year</option>
+        </select>
+      </div>
 
-<!-- 5. Consent & Privacy -->
-<h3>5. Consent & Privacy</h3>
-<div class="checkbox-group">
-  <div class="checkbox-item">
-    <input type="checkbox" id="consent1" required>
-    <label for="consent1">I consent to the use of my information strictly for this service.</label>
-  </div>
-  <div class="checkbox-item">
-    <input type="checkbox" id="consent2" required>
-    <label for="consent2">I understand this service includes an on-site doctor consultation.</label>
-  </div>
-</div>
+      <!-- 4.2 Executive Wellness Coaching -->
+      <div class="form-group">
+        <p><strong>Executive Wellness Coaching</strong></p>
+        <div class="checkbox-group checkbox-grid">
+          <div class="checkbox-item">
+            <input type="checkbox" id="coach1" name="coaching[]" value="nutrition">
+            <label for="coach1">Nutrition & Diet Coaching</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="coach2" name="coaching[]" value="fitness">
+            <label for="coach2">Fitness & Physical Training Coaching</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="coach3" name="coaching[]" value="stress">
+            <label for="coach3">Stress Management & Mental Wellness</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="coach4" name="coaching[]" value="complete">
+            <label for="coach4">Complete Executive Wellness Program</label>
+          </div>
+        </div>
+      </div>
 
+      <!-- 4.3 Home Monitoring Devices -->
+      <div class="form-group">
+        <p><strong>Home Monitoring Devices</strong></p>
+        <div class="checkbox-group checkbox-grid">
+          <div class="checkbox-item">
+            <input type="checkbox" id="device1" name="devices[]" value="bp">
+            <label for="device1">Digital Blood Pressure Monitor</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="device2" name="devices[]" value="glucose">
+            <label for="device2">Glucose Monitoring Kit</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="device3" name="devices[]" value="scale">
+            <label for="device3">Smart Weight & BMI Scale</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="device4" name="devices[]" value="oximeter">
+            <label for="device4">Pulse Oximeter</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="device5" name="devices[]" value="bundle">
+            <label for="device5">Full Home Monitoring Kit</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4.4 Specialist Teleconsultations -->
+      <div class="form-group">
+        <p><strong>Specialist Teleconsultations</strong></p>
+        <div class="checkbox-group checkbox-grid">
+          <div class="checkbox-item">
+            <input type="checkbox" id="tele1" name="teleconsults[]" value="cardio">
+            <label for="tele1">Cardiologist</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="tele2" name="teleconsults[]" value="endo">
+            <label for="tele2">Endocrinologist (Diabetes/Thyroid)</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="tele3" name="teleconsults[]" value="psych">
+            <label for="tele3">Psychiatrist / Psychologist</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="tele4" name="teleconsults[]" value="nutritionist">
+            <label for="tele4">Nutritionist</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="tele5" name="teleconsults[]" value="gp">
+            <label for="tele5">General Physician</label>
+          </div>
+          <div class="checkbox-item">
+            <input type="checkbox" id="tele6" name="teleconsults[]" value="custom">
+            <label for="tele6">Custom / Other:</label>
+          </div>
+            <input type="text" name="teleconsults_other" placeholder="If custom/other, please Specify specialist">
+        </div>
+      </div>
+
+
+      <!-- 5. Consent & Privacy -->
+      <h3>5. Consent & Privacy</h3>
+      <div class="checkbox-group">
+        <div class="checkbox-item">
+          <input type="checkbox" id="consent1" required>
+          <label for="consent1">I consent to the use of my information strictly for this service.</label>
+        </div>
+        <div class="checkbox-item">
+          <input type="checkbox" id="consent2" required>
+          <label for="consent2">I understand this service includes an on-site doctor consultation.</label>
+        </div>
+      </div>
 
       <!-- 6. Payment -->
       <h3>6. Payment & Confirmation</h3>
@@ -301,13 +375,7 @@
   </div>
 </div>
 
-
-
-
-
-
 </main>
-
 
 <footer class="footer" id="contact">
   <div class="footer-container">

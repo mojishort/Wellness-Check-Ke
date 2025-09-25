@@ -869,6 +869,19 @@ h2.section-title::after {
 }
 
 
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group p {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #0B132B;
+}
+
+
+
+
 
 .testimonials {
   text-align: center;
